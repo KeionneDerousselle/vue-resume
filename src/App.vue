@@ -15,15 +15,18 @@
         <h3>Awards</h3>
       </div>
     </div>
+    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
   import Header from "./components/shared/Header.vue";
+  import Footer from './components/shared/Footer.vue';
 
   export default {
     components: {
-      appHeader: Header
+      appHeader: Header,
+      appFooter: Footer
     }
   };
 </script>
@@ -39,6 +42,11 @@
     font-size: 16px;
     line-height: 24px;
     color: #1b1b18;
+  }
+
+  #app {
+    display: flex;
+    flex-direction: column;
   }
 
   .body-content {
