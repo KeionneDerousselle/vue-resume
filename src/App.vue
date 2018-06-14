@@ -2,13 +2,9 @@
   <div id="app">
     <app-header></app-header>
     <div class="container content">
-      <div class="section">
-        <h3>Skills</h3>
-        <hr>
-      </div>
-      <div class="section">
-        <h3>Experience</h3>
-        <hr>
+      <app-section section-title="Skills">
+      </app-section>
+      <app-section section-title="Experience">
         <div class="title-row">
           <h4>Willis Towers Watson, UT</h4>
           <h4>June 2015 - Present</h4>
@@ -22,28 +18,26 @@
           <li>Facilitated discussion amongst  team members and tasks to push towards iterative development, best practices, continuous delivery, and continuous integration, and build pipeline improvements</li>
           <li>Organized sprint review, planning, and retrospective meetings as SCRUM Master</li>
         </ul>
-      </div>
-      <div class="section">
-        <h3>Education</h3>
-        <hr>
-      </div>
-      <div class="section">
-        <h3>Awards</h3>
-        <hr>
-      </div>
+      </app-section>
+      <app-section section-title="Education">
+      </app-section>
+      <app-section section-title="Awards">
+      </app-section>
     </div>
     <app-footer></app-footer>
   </div>
 </template>
 
 <script>
-  import Header from "./components/shared/Header.vue";
-  import Footer from "./components/shared/Footer.vue";
+  import Header from './components/shared/Header.vue';
+  import Footer from './components/shared/Footer.vue';
+  import Section from './components/shared/Section.vue';
 
   export default {
     components: {
       appHeader: Header,
-      appFooter: Footer
+      appFooter: Footer,
+      appSection: Section
     }
   };
 </script>
