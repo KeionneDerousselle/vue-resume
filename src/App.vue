@@ -2,27 +2,14 @@
   <div id="app">
     <app-header></app-header>
     <div class="container content">
-      <app-section section-title="Skills">
-      </app-section>
-      <app-section section-title="Experience">
-        <div class="title-row">
-          <h4>Willis Towers Watson, UT</h4>
-          <h4>June 2015 - Present</h4>
-        </div>
-        <h5>Software Developer and SCRUM Master</h5>
-        <ul>
-          <li>Re-wrote a legacy applications using ReactJS, Webpack, and ES6</li>
-          <li>Added several new features to many internal and external products and tools</li>
-          <li>Provided maintenance and sought out improvements to increase the stability and functionality of legacy projects</li>
-          <li>Implemented unit,  integration, and end-to-end tests</li>
-          <li>Facilitated discussion amongst  team members and tasks to push towards iterative development, best practices, continuous delivery, and continuous integration, and build pipeline improvements</li>
-          <li>Organized sprint review, planning, and retrospective meetings as SCRUM Master</li>
-        </ul>
-      </app-section>
-      <app-section section-title="Education">
-      </app-section>
-      <app-section section-title="Awards">
-      </app-section>
+      <app-skills>
+      </app-skills>
+      <app-experience>
+      </app-experience>
+      <app-education>
+      </app-education>
+      <app-awards>
+      </app-awards>
     </div>
     <app-footer></app-footer>
   </div>
@@ -31,13 +18,19 @@
 <script>
   import Header from './components/shared/Header.vue';
   import Footer from './components/shared/Footer.vue';
-  import Section from './components/shared/Section.vue';
+  import Experience from './components/experience/Experience.vue';
+  import Skills from './components/skills/Skills.vue';
+  import Education from './components/education/Education.vue';
+  import Awards from './components/awards/Awards.vue';
 
   export default {
     components: {
       appHeader: Header,
       appFooter: Footer,
-      appSection: Section
+      appSkills: Skills,
+      appExperience: Experience,
+      appEducation: Education,
+      appAwards: Awards
     }
   };
 </script>
@@ -64,33 +57,5 @@
     min-height: 100vh;
     width: 100%;
     padding: 40px 0px;
-  }
-
-  .section h3 {
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #878359;
-  }
-
-  .section hr {
-    border-top: 1px solid #878359;
-  }
-
-  .section h4 {
-    font-size: 1.15rem;
-    font-weight: 500;
-  }
-
-  .section h5 {
-    font-size: 1.05rem;
-    font-weight: 500;
-  }
-
-  .title-row {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
   }
 </style>
