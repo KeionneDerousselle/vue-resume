@@ -1,16 +1,32 @@
 <template>
   <div class="app-card">
-    <div class="app-card__side app-card__side--front">
+    <div class="app-card__side app-card__side--front" :style="{ transform : isOnFront ? 'none' : 'rotateY(180deg)'}">
       <slot name="front"></slot>
+      <div class="btn-container">
+        <button class="btn btn-white" @click="isOnFront = false">
+          See More
+        </button>
+      </div>
     </div>
-    <div class="app-card__side app-card__side--back">
+    <div class="app-card__side app-card__side--back" :style="{ transform : !isOnFront ? 'rotateY(0deg)' : 'rotateY(180deg)'}">
       <slot name="back"></slot>
+      <div class="btn-container">
+        <button class="btn btn-green" @click="isOnFront = true">
+          Back
+        </button>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-  export default {};
+  export default {
+    data() {
+      return {
+        isOnFront: true
+      };
+    }
+  };
 </script>
 
 <style lang="scss" scoped>
@@ -21,7 +37,6 @@
     height: 50rem;
 
     &__side {
-      background-color: #fff;
       transition: all 0.8s ease;
       position: absolute;
       height: 50rem;
@@ -29,27 +44,70 @@
       left: 0;
       width: 100%;
       backface-visibility: hidden;
-      color: #7d9389;
       border-radius: 3px;
-      box-shadow: 0 1.5rem 4rem rgba(#000, .15);
+      box-shadow: 0 1.5rem 4rem rgba(#000, 0.3);
+
+      h4 {
+        font-size: 1.15em;
+      }
 
       &--front {
+        background-color: #7d9389;
+        color: #fff;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        .btn-container {
+          margin-top: 12rem;
+        }
       }
 
       &--back {
+        color: #7d9389;
         transform: rotateY(180deg);
       }
     }
+  }
 
-    &:hover &__side--front {
-      transform: rotateY(180deg);
+  .btn {
+    padding: 0 26px;
+    height: 40px;
+    min-width: 150px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 0;
+    text-align: center;
+    margin-right: 8px;
+    margin-bottom: 24px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+  }
+
+  .btn-green {
+    border: 2px solid #7d9389;
+    color: #7d9389;
+
+    &:hover{
+      background-color: #7d9389;
+      color: #fff;
+      opacity: 0.9;
     }
+  }
 
-    &:hover &__side--back {
-      transform: rotateY(0deg);
+  .btn-white {
+    border: 2px solid #fff;
+    color: #fff;
+
+    &:hover {
+      background-color: #fff;
+      color: #7d9389;
+      opacity: 0.9;
     }
   }
 </style>
