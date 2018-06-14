@@ -1,10 +1,12 @@
 <template>
   <header>
     <div class="header-parallax">
-      <div class="container">
+      <div class="header-padding">
         <div class="header-title">
-          <h1>Keionne Derousselle</h1>
-          <h2>Software Developer</h2>
+          <div class="container">
+            <h1>Keionne Derousselle</h1>
+            <h2>Software Developer</h2>
+          </div>
         </div>
       </div>
     </div>
@@ -25,12 +27,15 @@
     background-attachment: fixed;
   }
 
+  .header-padding {
+    padding-top: 90px;
+  }
+
   .header-title {
-    height: inherit;
+    background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70));
     font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #1b1b18;
+    color: #e7e7e4;
     text-transform: uppercase;
-    padding-top: 160px;
   }
 
   .header-title h1,
