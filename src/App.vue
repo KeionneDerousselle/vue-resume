@@ -16,12 +16,12 @@
 </template>
 
 <script>
-  import Header from './components/shared/Header.vue';
-  import Footer from './components/shared/Footer.vue';
-  import Experience from './components/experience/Experience.vue';
-  import About from './components/about/About.vue';
-  import Education from './components/education/Education.vue';
-  import Awards from './components/awards/Awards.vue';
+  import Header from "./components/shared/Header.vue";
+  import Footer from "./components/shared/Footer.vue";
+  import Experience from "./components/experience/Experience.vue";
+  import About from "./components/about/About.vue";
+  import Education from "./components/education/Education.vue";
+  import Awards from "./components/awards/Awards.vue";
 
   export default {
     components: {
@@ -45,10 +45,12 @@
 
   #app {
     background-color: #e7e7e4;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
     color: #1b1b18;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   .content {
@@ -58,7 +60,7 @@
     width: 100%;
     padding: 40px 0px;
   }
-    .btn {
+  .btn {
     padding: 0 26px;
     height: 40px;
     min-width: 150px;
@@ -94,5 +96,21 @@
       color: #7d9389;
       opacity: 0.9;
     }
+  }
+
+  .material-icons.md-18 {
+    font-size: 18px;
+  }
+
+  .material-icons.md-24 {
+    font-size: 24px;
+  }
+
+  .material-icons.md-36 {
+    font-size: 36px;
+  }
+
+  .material-icons.md-48 {
+    font-size: 48px;
   }
 </style>
