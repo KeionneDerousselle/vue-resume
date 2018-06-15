@@ -1,13 +1,18 @@
 <template>
-  <app-section section-title="Skills" class="skills">
-    <app-tabs :tabs="tabs">
-      <div v-for="(skillSet, index) in skillSets" :key="`${skillSet}${index}`" :slot="skillSet.skillSetTitle">
-        <div v-for="(skill, i) in skillSet.skills" :key="`${skill}${i}`">
-          {{ skill.name }}
-          <app-progress-bar :percent="skill.level"></app-progress-bar>
-        </div>
+  <app-section section-title="About Me" class="about">
+    <div class="row about-content">
+      <div class="col-md"></div>
+      <div class="col-md">
+        <app-tabs :tabs="tabs">
+          <div v-for="(skillSet, index) in skillSets" :key="`${skillSet}${index}`" :slot="skillSet.skillSetTitle">
+            <div v-for="(skill, i) in skillSet.skills" :key="`${skill}${i}`">
+              {{ skill.name }}
+              <app-progress-bar :percent="skill.level"></app-progress-bar>
+            </div>
+          </div>
+        </app-tabs>
       </div>
-    </app-tabs>
+    </div>
   </app-section>
 </template>
 
@@ -154,11 +159,14 @@
   };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   $gray: #ccc;
   $darker-gray: darken($gray, 50%);
 
-  .skills {
+  .about {
     color: $darker-gray;
+    .about-content {
+      height: 47rem;
+    }
   }
 </style>

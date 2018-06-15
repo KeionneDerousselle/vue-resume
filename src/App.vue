@@ -2,8 +2,8 @@
   <div id="app">
     <app-header></app-header>
     <div class="container content">
-      <app-skills>
-      </app-skills>
+      <app-about>
+      </app-about>
       <app-experience>
       </app-experience>
       <app-education>
@@ -19,7 +19,7 @@
   import Header from './components/shared/Header.vue';
   import Footer from './components/shared/Footer.vue';
   import Experience from './components/experience/Experience.vue';
-  import Skills from './components/skills/Skills.vue';
+  import About from './components/about/About.vue';
   import Education from './components/education/Education.vue';
   import Awards from './components/awards/Awards.vue';
 
@@ -27,7 +27,7 @@
     components: {
       appHeader: Header,
       appFooter: Footer,
-      appSkills: Skills,
+      appAbout: About,
       appExperience: Experience,
       appEducation: Education,
       appAwards: Awards
