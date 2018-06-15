@@ -192,7 +192,7 @@
     color: $darker-gray;
 
     .about-content {
-      height: 46rem;
+      height: 42rem;
       margin: 2rem 0;
     }
 

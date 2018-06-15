@@ -49,13 +49,14 @@
         transition: all 0.3x ease;
         -webkit-transition: all 0.3s ease;
         -moz-transition: all 0.3s ease;
-        padding: 0 24px;
+        font-size: 13px;
+        padding: 0 10px;
         position: relative;
         user-select: none;
         span {
           line-height: 24px;
           text-transform: uppercase;
-          letter-spacing: 2px;
+          letter-spacing: 1px;
           font-weight: 700;
           opacity: .8;
           &.active {
