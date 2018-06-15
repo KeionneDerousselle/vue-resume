@@ -5,6 +5,7 @@
       :onFrontSideClicked="handleFrontClicked"
       :title="cardTitle"
     >
+    <slot name="front" slot="content"></slot>
     </app-card-front>
 
     <app-card-back

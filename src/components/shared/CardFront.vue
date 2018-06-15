@@ -3,7 +3,7 @@
     <div slot="card-content" class="shadow">
       <div class="title-container container">
         <h4>{{ title }}</h4>
-        <slot name="front"></slot>
+        <slot name="content"></slot>
       </div>
       <div class="btn-container">
         <button class="btn btn-white" @click="onFrontSideClicked()">
@@ -42,6 +42,7 @@
 
     .title-container {
       text-align: center;
+      flex-direction: column;
     }
 
     .shadow {
