@@ -58,4 +58,41 @@
     width: 100%;
     padding: 40px 0px;
   }
+    .btn {
+    padding: 0 26px;
+    height: 40px;
+    min-width: 150px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 0;
+    text-align: center;
+    margin-right: 8px;
+    margin-bottom: 24px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+  }
+
+  .btn-green {
+    border: 2px solid #7d9389;
+    color: #7d9389;
+
+    &:hover {
+      background-color: #7d9389;
+      color: #fff;
+      opacity: 0.9;
+    }
+  }
+
+  .btn-white {
+    border: 2px solid #fff;
+    color: #fff;
+
+    &:hover {
+      background-color: #fff;
+      color: #7d9389;
+      opacity: 0.9;
+    }
+  }
 </style>
