@@ -6,7 +6,7 @@
         <slot name="content"></slot>
       </div>
       <div class="btn-container">
-        <button class="btn btn-white" @click="onFrontSideClicked()">
+        <button class="btn btn-outline-white" @click="onFrontSideClicked()">
           See More
         </button>
       </div>

@@ -60,6 +60,7 @@
     width: 100%;
     padding: 40px 0px;
   }
+
   .btn {
     padding: 0 26px;
     height: 40px;
@@ -76,7 +77,18 @@
     transition: all 0.3s ease;
   }
 
-  .btn-green {
+  .btn-outline-white {
+    border: 2px solid #fff;
+    color: #fff;
+
+    &:hover {
+      background-color: #fff;
+      color: #7d9389;
+      opacity: 0.9;
+    }
+  }
+
+  .btn-outline-green {
     border: 2px solid #7d9389;
     color: #7d9389;
 
@@ -87,13 +99,18 @@
     }
   }
 
-  .btn-white {
-    border: 2px solid #fff;
-    color: #fff;
-
+  .hover-white {
     &:hover {
       background-color: #fff;
       color: #7d9389;
+      opacity: 0.9;
+    }
+  }
+
+  .hover-green {
+    &:hover {
+      background-color: #7d9389;
+      color: #fff;
       opacity: 0.9;
     }
   }

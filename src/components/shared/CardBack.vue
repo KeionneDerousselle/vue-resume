@@ -8,7 +8,7 @@
         <slot name="content"></slot>
       </div>
       <div class="btn-container">
-        <button class="btn btn-green" @click="onBackSideClicked()">
+        <button class="btn btn-outline-green" @click="onBackSideClicked()">
           Back
         </button>
       </div>
