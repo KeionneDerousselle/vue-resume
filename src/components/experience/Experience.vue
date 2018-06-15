@@ -1,51 +1,53 @@
 <template>
   <app-section section-title="Experience">
-    <app-job-cards :jobs="jobs">
-    </app-job-cards>
+    <div class="experience-container">
+      <app-job-cards :jobs="jobs">
+      </app-job-cards>
+    </div>
   </app-section>
 </template>
 
 <script>
-  import Section from '../shared/Section.vue';
-  import JobCards from '../shared/JobCards.vue';
+  import Section from "../shared/Section.vue";
+  import JobCards from "./JobCards.vue";
 
   export default {
     data() {
       return {
         jobs: [
           {
-            companyName: 'Willis Towers Watson',
-            jobTitle: 'Software Developer',
-            timeFrame: 'Jun 2015 - Present',
+            companyName: "Willis Towers Watson",
+            jobTitle: "Software Developer",
+            timeFrame: "Jun 2015 - Present",
             jobTasks: [
-              'Legacy Application Rewrite',
-              'Maintain and Improve Product Stability',
-              'Automated Testing',
-              'AGILE and Iterative Development',
-              'Continous Integration and Delivery',
-              'Build Pipeline Improvements'
+              "Legacy Application Rewrite",
+              "Maintain and Improve Product Stability",
+              "Automated Testing",
+              "AGILE and Iterative Development",
+              "Continous Integration and Delivery",
+              "Build Pipeline Improvements"
             ]
           },
           {
-            companyName: 'Pluralsight',
-            timeFrame: 'Jan 2015 - Jun 2015',
-            jobTitle: 'Student Developer',
+            companyName: "Pluralsight",
+            timeFrame: "Jan 2015 - Jun 2015",
+            jobTitle: "Student Developer",
             jobTasks: [
-              'Test Driven Development',
-              'Created Workflow Automation Tool',
-              'Setup CI/CD Pipeline',
-              'Designed Look and Feel With Bootstrap and CSS',
-              'LEAN Development'
+              "Test Driven Development",
+              "Created Workflow Automation Tool",
+              "Setup CI/CD Pipeline",
+              "Designed Look and Feel With Bootstrap and CSS",
+              "LEAN Development"
             ]
           },
           {
-            companyName: 'International Document Services',
-            jobTitle: 'Student Developer',
-            timeFrame: 'Sept 2014 - Dec 2014',
+            companyName: "International Document Services",
+            jobTitle: "Student Developer",
+            timeFrame: "Sept 2014 - Dec 2014",
             jobTasks: [
-              'Applied New Style to Company Site',
-              'Created Dynamic Content and Widgets',
-              'Provided Weekly Demos'
+              "Applied New Style to Company Site",
+              "Created Dynamic Content and Widgets",
+              "Provided Weekly Demos"
             ]
           }
         ]
@@ -57,3 +59,10 @@
     }
   };
 </script>
+
+<style lang="scss" scoped>
+  .experience-container {
+    padding: 1rem 0;
+  }
+</style>
+

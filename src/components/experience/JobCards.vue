@@ -15,8 +15,8 @@
 </template>
 
 <script>
-  import Card from "./Card.vue";
-  import Section from "./Section.vue";
+  import Card from "../shared/Card.vue";
+  import Section from "../shared/Section.vue";
   import JobTasks from "./JobTasks.vue";
 
   export default {

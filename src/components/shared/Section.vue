@@ -5,6 +5,7 @@
     <div>
       <slot></slot>
     </div>
+    <hr>
   </section>
 </template>
 
