@@ -19,7 +19,7 @@
   .card-side {
     transition: all 0.8s ease;
     position: absolute;
-    height: 50rem;
+    height: 40rem;
     top: 0;
     left: 0;
     width: 100%;
@@ -45,7 +45,7 @@
 
     .title-container,
     .btn-container {
-      height: 25rem;
+      height: 20rem;
       display: flex;
       flex-grow: 1;
       justify-content: center;

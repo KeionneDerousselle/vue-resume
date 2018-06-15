@@ -57,7 +57,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 19rem;
+      height: 14rem;
     }
   }
 </style>
