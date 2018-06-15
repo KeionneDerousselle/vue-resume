@@ -1,11 +1,15 @@
 <template>
   <div class="app-card">
-    <div class="app-card__side app-card__side--front" :style="{ transform : isOnFront ? 'none' : 'rotateY(180deg)'}">
-      <slot name="front"></slot>
+    <div class="app-card__side app-card__side--front" :style="{ transform : isOnFront ? 'none' : 'rotateY(180deg)'}" @click="isOnFront = false">
+      <div class="shadow">
+      <div class="title-container">
+        <slot name="front"></slot>
+      </div>
       <div class="btn-container">
         <button class="btn btn-white" @click="isOnFront = false">
           See More
         </button>
+      </div>
       </div>
     </div>
     <div class="app-card__side app-card__side--back" :style="{ transform : !isOnFront ? 'rotateY(0deg)' : 'rotateY(180deg)'}">
@@ -51,18 +55,30 @@
         font-size: 1.15em;
       }
 
+      h5 {
+        font-size: 1.05em;
+      }
+
       &--front {
         background-color: #7d9389;
         color: #fff;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
         letter-spacing: 2px;
         text-transform: uppercase;
+        transition: all 0.8s ease;
+
+        &:hover .shadow {
+          background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+        }
+
+        .title-container,
         .btn-container {
-          margin-top: 12rem;
+          height: 25rem;
+          display: flex;
+          flex-grow: 1;
+          justify-content: center;
+          align-items: center;
         }
       }
 
@@ -93,7 +109,7 @@
     border: 2px solid #7d9389;
     color: #7d9389;
 
-    &:hover{
+    &:hover {
       background-color: #7d9389;
       color: #fff;
       opacity: 0.9;
