@@ -33,7 +33,6 @@
 </script>
 
 <style lang="scss" scoped>
-
   ul {
     list-style-type: none;
     list-style: none;
@@ -51,15 +50,17 @@
         -webkit-transition: all 0.3s ease;
         -moz-transition: all 0.3s ease;
         padding: 0 24px;
-        opacity: 0.5;
         position: relative;
+        user-select: none;
         span {
           line-height: 24px;
           text-transform: uppercase;
           letter-spacing: 2px;
           font-weight: 700;
+          opacity: .8;
           &.active {
             color: #7d9389;
+            opacity: 1;
           }
         }
       }
