@@ -2,7 +2,6 @@
   <div class="skill-bar">
     <div class="skill-bar fill" :style="{width: `${percent - 5}%`}">
     </div>
-    <span>{{ percent }}%</span>
   </div>
 </template>
 

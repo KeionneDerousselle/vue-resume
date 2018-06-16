@@ -11,18 +11,19 @@
           <p>7650 South Euro Drive</p>
           <p>Midvale, UT 84047</p>
           <hr>
-          <p>
-            <b>E:</b> knnderousselle@gmail.com</p>
-          <p>
-            <b>P:</b> +1-337-730-5608</p>
+          <p><b>E:</b> knnderousselle@gmail.com</p>
+          <p><b>P:</b> +1-337-730-5608</p>
+          <p><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/keionnederousselle/">LinkedIn</a></p>
         </div>
         <div class="col-md">
-          <input type="text" aria-placeholder="Your Name" placeholder="Your Name">
-          <input type="text" aria-placeholder="Email Address" placeholder="Email Address">
-          <textarea name="" id="" cols="30" rows="6" placeholder="Message" aria-placeholder="Message"></textarea>
-          <div class="contact-btn-container">
-            <button class="btn btn-outline-white hover-green">Submit</button>
-          </div>
+          <form method="POST" action="https://formspree.io/knnderousselle@gmail.com">
+            <input type="text" aria-placeholder="Your Name" placeholder="Your Name" name="name">
+            <input type="text" aria-placeholder="Email Address" placeholder="Email Address" name="emailAddress">
+            <textarea cols="30" rows="6" placeholder="Message" aria-placeholder="Message" name="message"></textarea>
+            <div class="contact-btn-container">
+              <button class="btn btn-outline-white hover-green" type="submit">Submit</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -76,6 +77,14 @@
 
       hr {
         border-color: #fff;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        &:hover {
+          color: #7d9389;
+        }
       }
 
       input,
@@ -136,10 +145,10 @@
       text-align: center;
       text-transform: uppercase;
       letter-spacing: 2px;
-      color: #8F9AA7;
+      color: #8f9aa7;
       background-color: #000;
       height: 4rem;
-      display:flex;
+      display: flex;
       align-items: center;
       font-size: 14px;
       .year {

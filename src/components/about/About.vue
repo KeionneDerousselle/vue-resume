@@ -2,16 +2,15 @@
   <app-section section-title="About Me" class="about">
     <div class="row about-content">
       <div class="col-md about-paragraphs">
+        <div class="my-picture">
+          <img src="../../assets/me.jpg" alt="Picture of Keionne">
+        </div>
         <div>
-          <app-about-paragraph
-            v-for="(about, index) in aboutMe"
-            :key="`about-paragraph-${index}`"
-            :icon="about.icon"
-            :text="about.text"
-            ></app-about-paragraph>
+          <app-about-paragraph v-for="(about, index) in aboutMe" :key="`about-paragraph-${index}`" :icon="about.icon" :text="about.text"></app-about-paragraph>
         </div>
       </div>
       <div class="col-md">
+        <div class="skills">
         <app-tabs :tabs="tabs">
           <div v-for="(skillSet, index) in skillSets" :key="`${skillSet}${index}`" :slot="skillSet.skillSetTitle">
             <div v-for="(skill, i) in skillSet.skills" :key="`${skill}${i}`">
@@ -20,6 +19,7 @@
             </div>
           </div>
         </app-tabs>
+        </div>
       </div>
     </div>
   </app-section>
@@ -29,23 +29,26 @@
   import Section from "../shared/Section.vue";
   import ProgressBar from "../shared/ProgressBar.vue";
   import Tabs from "../shared/Tabs.vue";
-  import AboutParagraph from './AboutParagraph.vue';
+  import AboutParagraph from "./AboutParagraph.vue";
 
   export default {
     data() {
       return {
         aboutMe: [
           {
-            icon: 'build',
-            text: 'Proven proficiency in Full-Stack Development, skilled at progressing from problem statement to well-documented design'
+            icon: "build",
+            text:
+              "Proven proficiency in Full-Stack Development, skilled at progressing from problem statement to well-documented design"
           },
           {
-            icon: 'timer',
-            text: 'Adapts Easily, Highly Committed, Hardworking and Determined to fulfill responsibilities in a Professional and Timely Manner'
+            icon: "timer",
+            text:
+              "Adapts Easily, Highly Committed, Hardworking and Determined to fulfill responsibilities in a Professional and Timely Manner"
           },
           {
-            icon: 'extension',
-            text: 'Analytical thinker that resolves issues or defects; often called upon to solve problems that have eluded resolution by others'
+            icon: "extension",
+            text:
+              "Analytical thinker that resolves issues or defects; often called upon to solve problems that have eluded resolution by others"
           }
         ],
         skillSets: [
@@ -192,14 +195,25 @@
     color: $darker-gray;
 
     .about-content {
-      min-height: 42rem;
-      margin: 2rem 0;
+      min-height: 45rem;
+      margin-bottom: 2rem;
     }
 
     .about-paragraphs {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
+      .my-picture {
+        img {
+          height: 200px;
+          margin-bottom: 2rem;
+          border-radius: 10%;
+        }
+      }
+    }
+
+    .skills {
+      margin-top: 2rem;
     }
   }
 </style>
