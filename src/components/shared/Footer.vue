@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="back-to-top">
+    <div class="back-to-top" @click="backToTop()">
       <i class="material-icons md-48">keyboard_arrow_up</i>
     </div>
     <div class="contact-me container" id="contact-me">
@@ -42,6 +42,12 @@
       return {
         currentYear: new Date(Date.now()).getFullYear()
       };
+    },
+    methods: {
+      backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
     }
   };
 </script>
@@ -66,6 +72,10 @@
       transition: background 0.5s;
       border-radius: 50%;
       right: 0;
+
+      &:hover {
+        background-color: darken(#7d9389, 15%);
+      }
     }
 
     .contact-me {
