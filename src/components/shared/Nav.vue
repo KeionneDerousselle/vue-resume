@@ -1,26 +1,32 @@
 <template>
-  <nav id="resume-nav" class="navbar sticky-top">
-    <div class="container">
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About Me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#experience">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#education">Education</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#awards">Awards</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact-me">Contact Me</a>
-        </li>
-      </ul>
+  <nav id="resume-nav" class="navbar navbar-expand-md navbar-dark sticky-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinksSection" aria-controls="navbarLinksSection" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarLinksSection">
+      <div class="nav-container">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#awards">Awards</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-me">Contact Me</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 </template>
@@ -31,31 +37,29 @@
 
 <style lang="scss" scoped>
   nav {
-    height: 60px;
     background-color: #000;
-    display: flex;
-    align-items: center;
 
-    ul {
-      list-style: none;
-      list-style-type: none;
+    .nav-container {
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-      li {
-        display: inline-block;
-        cursor: pointer;
-        user-select: none;
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        .nav-link {
-          font-size: 12px;
-          padding-right: 24px;
-          color: #fff;
-          text-decoration: none;
+    #navbarLinksSection {
+      background-color: inherit;
+    }
 
-          &:hover, &.active {
-            color: #b0a68d;
-          }
-        }
+    .navbar-nav .nav-item .nav-link {
+      font-size: 14px !important;
+      padding-right: 1.25rem !important;
+      padding-left: 0;
+      color: #fff !important;
+      user-select: none;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+
+      &:hover,
+      &.active {
+        color: #b0a68d !important;
       }
     }
   }
