@@ -8,22 +8,22 @@
       <div class="nav-container">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#home" v-scroll-to="`#home`">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">About Me</a>
+            <a class="nav-link" href="#about" v-scroll-to="`#about`">About Me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#experience">Experience</a>
+            <a class="nav-link" href="#experience" v-scroll-to="`#experience`">Experience</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#education">Education</a>
+            <a class="nav-link" href="#education" v-scroll-to="`#education`">Education</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#awards">Awards</a>
+            <a class="nav-link" href="#awards" v-scroll-to="`#awards`">Awards</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact-me">Contact Me</a>
+            <a class="nav-link" href="#contact-me" v-scroll-to="`#contact-me`">Contact Me</a>
           </li>
         </ul>
       </div>
