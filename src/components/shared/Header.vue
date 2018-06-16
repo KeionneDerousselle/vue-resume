@@ -32,9 +32,9 @@
   }
 
   .header-title {
-    background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70));
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
     font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #e7e7e4;
+    color: #fff;
     text-transform: uppercase;
   }
 

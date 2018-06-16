@@ -1,5 +1,5 @@
 <template>
-  <app-section section-title="Education">
+  <app-section section-title="Education" id="education">
 
   </app-section>
 </template>

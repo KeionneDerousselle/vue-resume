@@ -1,5 +1,5 @@
 <template>
-  <app-section section-title="Awards">
+  <app-section section-title="Awards" id="awards">
 
   </app-section>
 </template>

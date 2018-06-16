@@ -1,5 +1,5 @@
 <template>
-  <app-section section-title="About Me" class="about">
+  <app-section section-title="About Me" class="about" id="about">
     <div class="row about-content">
       <div class="col-md about-paragraphs">
         <div class="my-picture">

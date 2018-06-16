@@ -3,7 +3,7 @@
     <div class="back-to-top">
       <i class="material-icons md-48">keyboard_arrow_up</i>
     </div>
-    <div class="contact-me container">
+    <div class="contact-me container" id="contact-me">
       <h3>Contact Me</h3>
       <hr>
       <div class="row">
@@ -152,7 +152,7 @@
       align-items: center;
       font-size: 14px;
       .year {
-        color: #7d9389;
+        color: #ACB9B3;
       }
     }
   }

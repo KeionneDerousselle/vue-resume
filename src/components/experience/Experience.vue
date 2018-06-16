@@ -1,5 +1,5 @@
 <template>
-  <app-section section-title="Experience">
+  <app-section section-title="Experience" id="experience">
     <div class="experience-container">
       <app-job-cards :jobs="jobs">
       </app-job-cards>

@@ -1,15 +1,18 @@
 <template>
   <div id="app">
     <app-header></app-header>
-    <div class="container content">
-      <app-about>
-      </app-about>
-      <app-experience>
-      </app-experience>
-      <app-education>
-      </app-education>
-      <app-awards>
-      </app-awards>
+    <div class="content">
+      <app-nav></app-nav>
+      <div class="container content-padding">
+        <app-about>
+        </app-about>
+        <app-experience>
+        </app-experience>
+        <app-education>
+        </app-education>
+        <app-awards>
+        </app-awards>
+      </div>
     </div>
     <app-footer></app-footer>
   </div>
@@ -17,6 +20,7 @@
 
 <script>
   import Header from "./components/shared/Header.vue";
+  import Nav from "./components/shared/Nav.vue";
   import Footer from "./components/shared/Footer.vue";
   import Experience from "./components/experience/Experience.vue";
   import About from "./components/about/About.vue";
@@ -26,6 +30,7 @@
   export default {
     components: {
       appHeader: Header,
+      appNav: Nav,
       appFooter: Footer,
       appAbout: About,
       appExperience: Experience,
@@ -43,6 +48,10 @@
     margin: 0;
   }
 
+  body {
+    position: relative;
+  }
+
   #app {
     background-color: #e7e7e4;
     font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -58,6 +67,9 @@
     flex-direction: column;
     min-height: 100vh;
     width: 100%;
+  }
+
+  .content-padding {
     padding: 40px 0px;
   }
 
