@@ -1,8 +1,21 @@
 <template>
   <footer>
+    <div class="back-to-top">
+      <i class="material-icons md-48">keyboard_arrow_up</i>
+    </div>
     <div class="contact-me container">
+      <h3>Contact Me</h3>
+      <hr>
       <div class="row">
-        <div class="col-md"></div>
+        <div class="col-md">
+          <p>7650 South Euro Drive</p>
+          <p>Midvale, UT 84047</p>
+          <hr>
+          <p>
+            <b>E:</b> knnderousselle@gmail.com</p>
+          <p>
+            <b>P:</b> +1-337-730-5608</p>
+        </div>
         <div class="col-md">
           <input type="text" aria-placeholder="Your Name" placeholder="Your Name">
           <input type="text" aria-placeholder="Email Address" placeholder="Email Address">
@@ -13,11 +26,23 @@
         </div>
       </div>
     </div>
+    <div class="copyright">
+      <div class="container">
+        Keionne Derousselle
+        <span class="year">&copy; {{ currentYear }}</span>
+      </div>
+    </div>
   </footer>
 </template>
 
 <script>
-  export default {};
+  export default {
+    data() {
+      return {
+        currentYear: new Date(Date.now()).getFullYear()
+      };
+    }
+  };
 </script>
 
 <style lang="scss" scoped>
@@ -26,9 +51,32 @@
     color: #fff;
     flex-shrink: 0;
     min-height: 20rem;
+    position: relative;
+
+    .back-to-top {
+      position: absolute;
+      top: -25px;
+      height: 50px;
+      width: 50px;
+      cursor: pointer;
+      background-color: #7d9389;
+      display: inline-block;
+      transform: translate(0, 0);
+      transition: background 0.5s;
+      border-radius: 50%;
+      right: 0;
+    }
 
     .contact-me {
       padding: 2rem 0px;
+
+      h3 {
+        text-transform: uppercase;
+      }
+
+      hr {
+        border-color: #fff;
+      }
 
       input,
       textarea {
@@ -41,7 +89,7 @@
         margin-bottom: 24px;
         background: #f5f5f5;
 
-        &::placeholder{
+        &::placeholder {
           text-transform: uppercase;
           color: #4d4d4d;
           letter-spacing: 1px;
@@ -78,6 +126,24 @@
       .contact-btn-container {
         display: flex;
         justify-content: flex-end;
+        .btn {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .copyright {
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #8F9AA7;
+      background-color: #000;
+      height: 4rem;
+      display:flex;
+      align-items: center;
+      font-size: 14px;
+      .year {
+        color: #7d9389;
       }
     }
   }
