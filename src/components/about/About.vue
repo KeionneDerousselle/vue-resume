@@ -1,32 +1,26 @@
 <template>
   <app-section section-title="About Me" class="about" id="about">
-    <div class="row about-content">
-      <div class="col-md about-paragraphs">
-        <div data-aos="fade-right" data-aos-duration="2500" class="my-picture">
-          <img src="../../assets/me.jpg" alt="Picture of Keionne">
-        </div>
-        <div>
-          <app-about-paragraph
-            v-for="(about, index) in aboutMe"
-            :key="`about-paragraph-${index}`"
-            :icon="about.icon"
-            :text="about.text"
-            data-aos="fade-right"
-            data-aos-delay="100"
-            data-aos-duration="2500"
-            ></app-about-paragraph>
+    <div class="about-content">
+      <div class="row">
+        <div class="flex-center w-100 about-section">
+          <div data-aos="fade-right" data-aos-duration="2500" class="my-picture">
+            <img src="../../assets/me.jpg" alt="Picture of Keionne">
+          </div>
         </div>
       </div>
-      <div class="col-md">
-        <div class="skills" data-aos="fade-left" data-aos-duration="3000">
-          <app-tabs :tabs="tabs">
-            <div v-for="(skillSet, index) in skillSets" :key="`${skillSet}${index}`" :slot="skillSet.skillSetTitle">
-              <div v-for="(skill, i) in skillSet.skills" :key="`${skill}${i}`">
-                {{ skill.name }}
-                <app-progress-bar :percent="skill.level"></app-progress-bar>
-              </div>
-            </div>
-          </app-tabs>
+      <div class="row about-section">
+        <div class="col-md" v-for="(about, index) in aboutMe" :key="`about-paragraph-${index}`">
+          <app-about-paragraph :icon="about.icon" :text="about.text" data-aos="fade-right" data-aos-delay="100" data-aos-duration="2500"></app-about-paragraph>
+        </div>
+      </div>
+      <div class="row about-section">
+        <div class="col-md" v-for="(skillSet, index) in skillSets" :key="`${skillSet}${index}`">
+          <h4 class="skill-set-title">{{ skillSet.skillSetTitle }}</h4>
+          <hr>
+          <div v-for="(skill, i) in skillSet.skills" :key="`${skill}${i}`">
+            {{ skill.name }}
+            <app-progress-bar :percent="skill.level"></app-progress-bar>
+          </div>
         </div>
       </div>
     </div>
@@ -36,7 +30,6 @@
 <script>
   import Section from "../shared/Section.vue";
   import ProgressBar from "../shared/ProgressBar.vue";
-  import Tabs from "../shared/Tabs.vue";
   import AboutParagraph from "./AboutParagraph.vue";
 
   export default {
@@ -102,6 +95,39 @@
             ]
           },
           {
+            skillSetTitle: "Technical Skills",
+            skills: [
+              {
+                name: "Test Driven Development",
+                level: 95
+              },
+              {
+                name: "Automated Testing",
+                level: 97
+              },
+              {
+                name: "SOLID Principles",
+                level: 95
+              },
+              {
+                name: "Continuous Integration and Delivery",
+                level: 93
+              },
+              {
+                name: "AGILE Development",
+                level: 100
+              },
+              {
+                name: "Object-Oriented Programming",
+                level: 97
+              },
+              {
+                name: "Pair Programming",
+                level: 100
+              }
+            ]
+          },
+          {
             skillSetTitle: "Development Tools",
             skills: [
               {
@@ -141,41 +167,9 @@
                 level: 75
               }
             ]
-          },
-          {
-            skillSetTitle: "Technical Skills",
-            skills: [
-              {
-                name: "Test Driven Development",
-                level: 95
-              },
-              {
-                name: "Automated Testing",
-                level: 97
-              },
-              {
-                name: "SOLID Principles",
-                level: 95
-              },
-              {
-                name: "Continuous Integration and Delivery",
-                level: 93
-              },
-              {
-                name: "AGILE Development",
-                level: 100
-              },
-              {
-                name: "Object-Oriented Programming",
-                level: 97
-              },
-              {
-                name: "Pair Programming",
-                level: 100
-              }
-            ]
           }
-        ]
+        ],
+        selectedSkillSet: "Core Competencies"
       };
     },
     computed: {
@@ -186,10 +180,15 @@
         }, []);
       }
     },
+    methods: {
+      handleSkillSetSelected(skillSet) {
+        this.selectedSkillSet = skillSet;
+        console.log(this.selectedSkillSet);
+      }
+    },
     components: {
       appSection: Section,
       appProgressBar: ProgressBar,
-      appTabs: Tabs,
       appAboutParagraph: AboutParagraph
     }
   };
@@ -204,24 +203,29 @@
 
     .about-content {
       min-height: 45rem;
-      margin-bottom: 2rem;
     }
 
-    .about-paragraphs {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      .my-picture {
-        img {
-          height: 200px;
-          margin-bottom: 2rem;
-          border-radius: 10%;
-        }
+    .my-picture {
+      img {
+        height: 315px;
+        border-radius: 10%;
       }
     }
 
-    .skills {
-      margin-top: 2rem;
+    .flex-center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .about-section {
+      margin-bottom: 2rem;
+    }
+
+    .skill-set-title {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 700;
     }
   }
 </style>
