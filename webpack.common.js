@@ -1,15 +1,14 @@
 var path = require('path');
 var webpack = require('webpack');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 // const CleanWebpackPlugin = require('clean-webpack-plugin');
 // const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = {
   entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/dist/',
     filename: 'build.js'
   },
   module: {
@@ -78,12 +77,10 @@ module.exports = {
 
   plugins: [
     new VueLoaderPlugin(),
-    new CopyWebpackPlugin([
-      {
-        from: 'index.html',
-        to: 'index.html'
-      }
-    ]),
+    new HtmlWebpackPlugin({
+      template: './index.html',
+      filename: 'index.html'
+    }),
     // new CleanWebpackPlugin(['dist']),
     // new MiniCssExtractPlugin('styles.[contentHash].css'),
   ]
