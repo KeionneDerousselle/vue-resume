@@ -51,16 +51,36 @@
       background-color: inherit;
     }
 
+    // ul.navbar-nav:last-child .nav-link{
+    //   margin-right: 0;
+    // }
+
     .navbar-nav .nav-item .nav-link {
       font-size: 14px !important;
-      padding-right: 1.25rem !important;
+      margin-right: 1.25rem;
       padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 3px;
       color: #fff !important;
       user-select: none;
       text-transform: uppercase;
       letter-spacing: 3px;
 
-      &:hover,
+      &::after {
+        content: "";
+        display: block;
+        margin: auto;
+        height: 3px;
+        width: 0px;
+        background: transparent;
+        transition: width 0.5s ease, background-color 0.5s ease;
+      }
+
+      &:hover::after {
+        width: 100%;
+        background: #b0a68d;
+      }
+
       &.active {
         color: #b0a68d !important;
       }
