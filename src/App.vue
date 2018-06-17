@@ -6,6 +6,7 @@
       <div class="container content-padding">
         <app-about>
         </app-about>
+        <app-skills></app-skills>
         <app-experience>
         </app-experience>
         <app-education>
@@ -21,21 +22,23 @@
 <script>
   import Header from "./components/shared/Header.vue";
   import Nav from "./components/shared/Nav.vue";
-  import Footer from "./components/shared/Footer.vue";
-  import Experience from "./components/experience/Experience.vue";
   import About from "./components/about/About.vue";
+  import Skills from "./components/skills/Skills.vue";
+  import Experience from "./components/experience/Experience.vue";
   import Education from "./components/education/Education.vue";
   import Awards from "./components/awards/Awards.vue";
+  import Footer from "./components/shared/Footer.vue";
 
   export default {
     components: {
       appHeader: Header,
       appNav: Nav,
-      appFooter: Footer,
       appAbout: About,
+      appSkills: Skills,
       appExperience: Experience,
       appEducation: Education,
-      appAwards: Awards
+      appAwards: Awards,
+      appFooter: Footer
     }
   };
 </script>
@@ -141,5 +144,13 @@
 
   .material-icons.md-48 {
     font-size: 48px;
+  }
+  
+  h4 {
+    font-size: 1.15em;
+  }
+
+  h5 {
+    font-size: 1.05em;
   }
 </style>
