@@ -10,12 +10,16 @@
       </li>
     </ul>
     <div>
-      <slot :name="selectedTab"></slot>
+      <div v-for="tab in tabs" :key="`${tab}-content`" :class="['tab-content', { active: selectedTab === tab}]">
+        <slot :name="tab"></slot>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+  import AOS from 'aos';
+
   export default {
     props: {
       tabs: {
@@ -28,6 +32,10 @@
       return {
         selectedTab: this.tabs[0]
       };
+    },
+
+    updated() {
+      AOS.refresh();
     }
   };
 </script>
@@ -65,6 +73,14 @@
           }
         }
       }
+    }
+  }
+
+  .tab-content {
+    display: none;
+
+    &.active {
+      display: block;
     }
   }
 </style>
