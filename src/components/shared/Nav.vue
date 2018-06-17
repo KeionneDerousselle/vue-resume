@@ -51,10 +51,6 @@
       background-color: inherit;
     }
 
-    // ul.navbar-nav:last-child .nav-link{
-    //   margin-right: 0;
-    // }
-
     .navbar-nav .nav-item .nav-link {
       font-size: 14px !important;
       margin-right: 1.25rem;

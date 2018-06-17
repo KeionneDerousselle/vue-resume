@@ -1,28 +1,28 @@
 <template>
   <app-section section-title="Education" id="education">
-
-    <div class="row">
-      <div class="col-md">
-        <h4>Neumont University, Salt Lake City, UT</h4>
-        <h4>Bachelor of Science in Computer Science</h4>
-        <h4>Graduated cum laude with a GPA of 3.54 out of a possible 4.0</h4>
-      </div>
-      <div class="col-md">
-        <div class="education-icon">
-          <i class="material-icons md-48">code</i>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md">
+    <div class="education-container">
+      <div class="w-100">
         <div class="education-icon">
           <i class="material-icons md-48">school</i>
         </div>
       </div>
-      <div class="col-md">
-        <h4>Louisiana School for Math, Science, and the Arts, Nachitoches, LA</h4>
-        <h4>High School Diploma</h4>
-        <h4>Graduated with a GPA of 3.2 out of a possible 4.0</h4>
+      <div class="w-100 education-section">
+        <div class="education-title">
+          <h4>Neumont University</h4>
+          <h4>2015</h4>
+        </div>
+        <hr>
+        <h5>Bachelor of Science in Computer Science</h5>
+        <h5>Graduated cum laude with a GPA of 3.54 out of a possible 4.0</h5>
+      </div>
+      <div class="w-100 education-section">
+        <div class="education-title">
+          <h4>Louisiana School for Math, Science, and the Arts</h4>
+          <h4>2012</h4>
+        </div>
+        <hr>
+        <h5>High School Diploma</h5>
+        <h5>Graduated with a GPA of 3.2 out of a possible 4.0</h5>
       </div>
     </div>
   </app-section>
@@ -39,8 +39,29 @@
 </script>
 
 <style lang="scss" scoped>
+  .education-container {
+    margin-top: 2rem;
+  }
+
   .education-icon {
     color: #7d9389;
     text-align: center;
+  }
+
+  .education-section {
+    margin-bottom: 5rem;
+  }
+
+  .education-title {
+    text-transform: uppercase;
+    color: #7d9389;
+    margin-bottom: 1rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h4 {
+      font-weight: 700;
+    }
   }
 </style>
