@@ -4,8 +4,10 @@ scaff
     <div class="skills">
       <div class="row about-section">
         <div class="col-md" v-for="(skillSet, index) in skillSets" :key="`${skillSet}${index}`">
-          <h4 class="skill-set-title">{{ skillSet.skillSetTitle }}</h4>
-          <hr>
+          <div class="skill-set-title">
+            <h4>{{ skillSet.skillSetTitle }}</h4>
+            <hr>
+          </div>
           <div v-for="(skill, i) in skillSet.skills" :key="`${skill}${i}`">
             {{ skill.name }}
             <app-progress-bar :percent="skill.level"></app-progress-bar>
@@ -29,15 +31,15 @@ scaff
             skills: [
               {
                 name: "ReactJs",
-                level: 98
-              },
-              {
-                name: "ES6",
                 level: 95
               },
               {
+                name: "ES6",
+                level: 92
+              },
+              {
                 name: "Redux",
-                level: 98
+                level: 95
               },
               {
                 name: "Webpack",
@@ -48,16 +50,12 @@ scaff
                 level: 90
               },
               {
-                name: "Enzyme",
-                level: 75
-              },
-              {
                 name: "REST",
                 level: 95
               },
               {
                 name: "HTML",
-                level: 95
+                level: 93
               },
               {
                 name: "CSS",
@@ -70,7 +68,7 @@ scaff
             skills: [
               {
                 name: "Test Driven Development",
-                level: 95
+                level: 90
               },
               {
                 name: "Automated Testing",
@@ -90,7 +88,7 @@ scaff
               },
               {
                 name: "Object-Oriented Programming",
-                level: 97
+                level: 95
               },
               {
                 name: "Pair Programming",
@@ -103,7 +101,7 @@ scaff
             skills: [
               {
                 name: "VS Code",
-                level: 90
+                level: 87
               },
               {
                 name: "Git",
@@ -111,7 +109,7 @@ scaff
               },
               {
                 name: "JIRA",
-                level: 85
+                level: 80
               },
               {
                 name: "TeamCity",
@@ -123,7 +121,7 @@ scaff
               },
               {
                 name: "Visual Studio",
-                level: 90
+                level: 85
               },
               {
                 name: "ReSharper",
@@ -131,10 +129,6 @@ scaff
               },
               {
                 name: "Sumo Logic",
-                level: 80
-              },
-              {
-                name: "New Relic",
                 level: 75
               }
             ]
@@ -151,14 +145,19 @@ scaff
 
 <style lang="scss" scoped>
   .skills {
-    min-height: 45rem;
     margin: 2rem 0;
   }
 
   .skill-set-title {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 700;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    h4 {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 700;
+      height: 2rem;
+    }
   }
 </style>
 

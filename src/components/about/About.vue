@@ -10,7 +10,7 @@
       </div>
       <div class="row about-section">
         <div class="col-md" v-for="(about, index) in aboutMe" :key="`about-paragraph-${index}`">
-          <app-about-paragraph :icon="about.icon" :text="about.text" data-aos="fade-right" data-aos-delay="100" data-aos-duration="2500"></app-about-paragraph>
+          <app-about-paragraph :icon="about.icon" :text="about.text" data-aos="fade-left" data-aos-duration="3000"></app-about-paragraph>
         </div>
       </div>
     </div>
@@ -61,6 +61,7 @@
       img {
         height: 315px;
         border-radius: 10%;
+        margin-top: 2rem;
       }
     }
 

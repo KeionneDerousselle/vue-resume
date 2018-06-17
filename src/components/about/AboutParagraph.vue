@@ -29,5 +29,7 @@
 .about-icon {
   text-align: center;
   color: #7d9389;
+  height: 2rem;
+  margin-bottom: 2rem;
 }
 </style>
