@@ -2,11 +2,11 @@
   <app-section section-title="Education" id="education">
     <div class="education-container">
       <div class="w-100">
-        <div class="education-icon">
+        <div class="education-icon" data-aos="zoom-in" data-aos-duration="1500">
           <i class="material-icons md-48">school</i>
         </div>
       </div>
-      <div class="w-100 education-section">
+      <div class="w-100 education-section" data-aos="slide-left" data-aos-duration="1500">
         <div class="education-title">
           <h4>Neumont University</h4>
           <h4>2015</h4>
@@ -15,7 +15,7 @@
         <h5>Bachelor of Science in Computer Science</h5>
         <h5>Graduated cum laude with a GPA of 3.54 out of a possible 4.0</h5>
       </div>
-      <div class="w-100 education-section">
+      <div class="w-100 education-section" data-aos="slide-right" data-aos-duration="1500">
         <div class="education-title">
           <h4>Louisiana School for Math, Science, and the Arts</h4>
           <h4>2012</h4>
