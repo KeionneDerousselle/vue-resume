@@ -2,23 +2,31 @@
   <app-section section-title="About Me" class="about" id="about">
     <div class="row about-content">
       <div class="col-md about-paragraphs">
-        <div class="my-picture">
+        <div data-aos="fade-right" data-aos-duration="2500" class="my-picture">
           <img src="../../assets/me.jpg" alt="Picture of Keionne">
         </div>
         <div>
-          <app-about-paragraph v-for="(about, index) in aboutMe" :key="`about-paragraph-${index}`" :icon="about.icon" :text="about.text"></app-about-paragraph>
+          <app-about-paragraph
+            v-for="(about, index) in aboutMe"
+            :key="`about-paragraph-${index}`"
+            :icon="about.icon"
+            :text="about.text"
+            data-aos="fade-right"
+            data-aos-delay="100"
+            data-aos-duration="2500"
+            ></app-about-paragraph>
         </div>
       </div>
       <div class="col-md">
-        <div class="skills">
-        <app-tabs :tabs="tabs">
-          <div v-for="(skillSet, index) in skillSets" :key="`${skillSet}${index}`" :slot="skillSet.skillSetTitle">
-            <div v-for="(skill, i) in skillSet.skills" :key="`${skill}${i}`">
-              {{ skill.name }}
-              <app-progress-bar :percent="skill.level"></app-progress-bar>
+        <div class="skills" data-aos="fade-left" data-aos-duration="3000">
+          <app-tabs :tabs="tabs">
+            <div v-for="(skillSet, index) in skillSets" :key="`${skillSet}${index}`" :slot="skillSet.skillSetTitle">
+              <div v-for="(skill, i) in skillSet.skills" :key="`${skill}${i}`">
+                {{ skill.name }}
+                <app-progress-bar :percent="skill.level"></app-progress-bar>
+              </div>
             </div>
-          </div>
-        </app-tabs>
+          </app-tabs>
         </div>
       </div>
     </div>

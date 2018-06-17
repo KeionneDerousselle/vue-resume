@@ -1,6 +1,12 @@
 import Vue from 'vue';
 import VueScrollTo from 'vue-scrollto';
 import App from './App.vue';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
+window.addEventListener('load', AOS.refresh);
+AOS.refresh();
 
 Vue.use(VueScrollTo, {
   container: 'body',
@@ -17,5 +23,8 @@ Vue.use(VueScrollTo, {
 
 new Vue({
   el: '#app',
+  mounted() {
+    AOS.init();
+  },
   render: h => h(App)
 });
