@@ -1,7 +1,7 @@
 <template>
   <div class="background-dark">
     <app-section section-title="Education" id="education">
-      <div class="section-container">
+      <div class="section-container overflow-hidden">
         <div class="w-100">
           <div class="education-icon text-center" data-aos="zoom-in" data-aos-duration="1500">
             <i class="material-icons md-48">school</i>
