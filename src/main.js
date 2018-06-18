@@ -25,6 +25,9 @@ new Vue({
   el: '#app',
   mounted() {
     AOS.init();
+    $('.navbar-nav li a').click(function(event) {
+      $('.navbar-collapse').collapse('hide');
+    });
   },
   render: h => h(App)
 });
