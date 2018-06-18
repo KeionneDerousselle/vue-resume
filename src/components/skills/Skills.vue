@@ -1,21 +1,23 @@
 scaff
 <template>
-  <app-section section-title="Skills" id="skills">
-    <div class="section-container">
-      <div class="row about-section">
-        <div class="col-md" v-for="(skillSet, index) in skillSets" :key="`${skillSet}${index}`">
-          <div class="skill-set-title text-center margin-bottom-2">
-            <h4>{{ skillSet.skillSetTitle }}</h4>
-            <hr>
-          </div>
-          <div v-for="(skill, i) in skillSet.skills" :key="`${skill}${i}`">
-            {{ skill.name }}
-            <app-progress-bar :percent="skill.level"></app-progress-bar>
+  <div class="background-dark">
+    <app-section section-title="Skills" id="skills">
+      <div class="section-container">
+        <div class="row about-section">
+          <div class="col-md" v-for="(skillSet, index) in skillSets" :key="`${skillSet}${index}`">
+            <div class="skill-set-title text-center margin-bottom-2">
+              <h4>{{ skillSet.skillSetTitle }}</h4>
+              <hr>
+            </div>
+            <div v-for="(skill, i) in skillSet.skills" :key="`${skill}${i}`">
+              {{ skill.name }}
+              <app-progress-bar :percent="skill.level"></app-progress-bar>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </app-section>
+    </app-section>
+  </div>
 </template>
 
 <script>

@@ -17,6 +17,16 @@ $black: #000;
 
 $space: 2rem;
 
+.background-light {
+  padding: $space 0;
+  background: $white;
+}
+
+.background-dark {
+  padding: $space 0;
+  background: #f5f5f5;
+}
+
 .flex-center {
   display: flex;
   justify-content: center;
@@ -30,7 +40,7 @@ $space: 2rem;
 }
 
 .section-container {
-  margin: $space 0;
+  margin-top: $space;
 }
 
 .margin-bottom-2 {

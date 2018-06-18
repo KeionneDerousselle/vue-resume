@@ -75,6 +75,6 @@
   }
 
   .content-padding {
-    padding: 40px 0px;
+    padding: 2rem 0px;
   }
 </style>

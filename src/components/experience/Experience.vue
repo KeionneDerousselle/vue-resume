@@ -1,10 +1,12 @@
 <template>
-  <app-section section-title="Experience" id="experience">
-    <div class="section-container">
-      <app-job-cards :jobs="jobs">
-      </app-job-cards>
-    </div>
-  </app-section>
+  <div class="background-light">
+    <app-section section-title="Experience" id="experience">
+      <div class="section-container">
+        <app-job-cards :jobs="jobs">
+        </app-job-cards>
+      </div>
+    </app-section>
+  </div>
 </template>
 
 <script>
