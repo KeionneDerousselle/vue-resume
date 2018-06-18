@@ -3,27 +3,33 @@
     <div class="back-to-top" @click="backToTop()">
       <i class="material-icons md-48">keyboard_arrow_up</i>
     </div>
-    <div class="contact-me container" id="contact-me">
-      <h3>Contact Me</h3>
-      <hr>
-      <div class="row">
-        <div class="col-md">
-          <p>7650 South Euro Drive</p>
-          <p>Midvale, UT 84047</p>
-          <hr>
-          <p><b>E:</b> knnderousselle@gmail.com</p>
-          <p><b>P:</b> +1-337-730-5608</p>
-          <p><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/keionnederousselle/">LinkedIn</a></p>
-        </div>
-        <div class="col-md">
-          <form method="POST" action="https://formspree.io/knnderousselle@gmail.com">
-            <input type="text" aria-placeholder="Your Name" placeholder="Your Name" name="name">
-            <input type="text" aria-placeholder="Email Address" placeholder="Email Address" name="emailAddress">
-            <textarea cols="30" rows="6" placeholder="Message" aria-placeholder="Message" name="message"></textarea>
-            <div class="contact-btn-container">
-              <button class="btn btn-outline-white hover-green" type="submit">Submit</button>
-            </div>
-          </form>
+    <div class="container">
+      <div class="contact-me" id="contact-me">
+        <h3>Contact Me</h3>
+        <hr>
+        <div class="row">
+          <div class="col-md">
+            <p>7650 South Euro Drive</p>
+            <p>Midvale, UT 84047</p>
+            <hr>
+            <p>
+              <b>E:</b> knnderousselle@gmail.com</p>
+            <p>
+              <b>P:</b> +1-337-730-5608</p>
+            <p>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/keionnederousselle/">LinkedIn</a>
+            </p>
+          </div>
+          <div class="col-md">
+            <form method="POST" action="https://formspree.io/knnderousselle@gmail.com">
+              <input type="text" aria-placeholder="Your Name" placeholder="Your Name" name="name">
+              <input type="text" aria-placeholder="Email Address" placeholder="Email Address" name="emailAddress">
+              <textarea cols="30" rows="6" placeholder="Message" aria-placeholder="Message" name="message"></textarea>
+              <div class="contact-btn-container">
+                <button class="btn btn-outline-white hover-green" type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -45,7 +51,7 @@
     },
     methods: {
       backToTop() {
-        this.$scrollTo('#home', 500);
+        this.$scrollTo("#home", 500);
       }
     }
   };
