@@ -42,6 +42,7 @@
 
   .side-back {
     color: $green-darker;
+    -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
 
     .back-title {

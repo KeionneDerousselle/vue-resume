@@ -40,6 +40,8 @@
   .side-front {
     background-color: $green-darker;
     color: $white;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
     transition: all 0.8s ease;
 
     .shadow {

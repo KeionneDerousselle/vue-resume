@@ -1,7 +1,10 @@
 <template>
   <div class="app-card">
     <app-card-front
-      :style="{ transform : isOnFront ? 'none' : 'rotateY(180deg)'}"
+      :style="{
+        transform : isOnFront ? 'none' : 'rotateY(180deg)',
+        '-webkit-transform': isOnFront ? 'none' : 'rotateY(180deg)'
+      }"
       :onFrontSideClicked="handleFrontClicked"
       :title="cardTitle"
     >
@@ -9,7 +12,10 @@
     </app-card-front>
 
     <app-card-back
-      :style="{ transform : !isOnFront ? 'rotateY(0deg)' : 'rotateY(180deg)'}"
+      :style="{
+        transform : !isOnFront ? 'rotateY(0deg)' : 'rotateY(180deg)',
+        '-webkit-transform': !isOnFront ? 'rotateY(0deg)' : 'rotateY(180deg)'
+      }"
       :onBackSideClicked="handleBackClicked"
       :title="cardTitle"
     >
@@ -57,6 +63,7 @@
   .app-card {
     perspective: 150rem;
     -moz-perspective: 150rem;
+    -webkit-perspective: 150rem;
     position: relative;
     height: 40rem;
   }
