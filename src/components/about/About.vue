@@ -1,20 +1,20 @@
 <template>
-  <app-section section-title="About Me" class="about" id="about">
-    <div class="about-content">
+  <div class="about-content" id="about">
+    <app-section section-title="About Me">
       <div class="row">
-        <div class="flex-center w-100 about-section">
+        <div class="flex-center w-100 margin-bottom-2">
           <div data-aos="fade-right" data-aos-duration="2500" class="my-picture">
             <img src="../../assets/me.jpg" alt="Picture of Keionne">
           </div>
         </div>
       </div>
-      <div class="row about-section">
+      <div class="row margin-bottom-2">
         <div class="col-md" v-for="(about, index) in aboutMe" :key="`about-paragraph-${index}`">
           <app-about-paragraph :icon="about.icon" :text="about.text" data-aos="fade-left" data-aos-duration="3000"></app-about-paragraph>
         </div>
       </div>
-    </div>
-  </app-section>
+    </app-section>
+  </div>
 </template>
 
 <script>
@@ -50,22 +50,18 @@
   };
 </script>
 
-<style lang="scss">
-  @import '../../styles/variables.scss';
+<style lang="scss" scoped>
+  @import "../../styles/variables.scss";
 
-  .about {
-    color: $gray-darker;
-
-    .my-picture {
-      img {
-        height: 315px;
-        border-radius: 10%;
-        margin-top: 2rem;
-      }
+  .my-picture {
+    img {
+      height: 315px;
+      border-radius: 10%;
+      margin-top: 2rem;
     }
+  }
 
-    .about-section {
-      margin-bottom: 2rem;
-    }
+  .about-section {
+    margin-bottom: 2rem;
   }
 </style>

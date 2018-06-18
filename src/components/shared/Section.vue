@@ -1,9 +1,11 @@
 <template>
   <section>
-    <h3>{{ sectionTitle }}</h3>
-    <hr>
-    <div>
-      <slot></slot>
+    <div class="container">
+      <h3>{{ sectionTitle }}</h3>
+      <hr>
+      <div>
+        <slot></slot>
+      </div>
     </div>
   </section>
 </template>

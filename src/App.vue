@@ -3,7 +3,7 @@
     <app-header></app-header>
     <div class="content">
       <app-nav></app-nav>
-      <div class="container content-padding">
+      <div class="content-padding">
         <app-about>
         </app-about>
         <app-skills></app-skills>
@@ -44,6 +44,8 @@
 </script>
 
 <style lang="scss">
+  @import "./styles/variables.scss";
+
   html,
   body,
   #app {
@@ -60,7 +62,7 @@
     font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
-    color: #1b1b18;
+    color: $black-light;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -74,83 +76,5 @@
 
   .content-padding {
     padding: 40px 0px;
-  }
-
-  .btn {
-    padding: 0 26px;
-    height: 40px;
-    min-width: 150px;
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-radius: 0;
-    text-align: center;
-    margin-right: 8px;
-    margin-bottom: 24px;
-    background-color: transparent;
-    transition: all 0.3s ease;
-  }
-
-  .btn-outline-white {
-    border: 2px solid #fff;
-    color: #fff;
-
-    &:hover {
-      background-color: #fff;
-      color: #7d9389;
-      opacity: 0.9;
-    }
-  }
-
-  .btn-outline-green {
-    border: 2px solid #7d9389;
-    color: #7d9389;
-
-    &:hover {
-      background-color: #7d9389;
-      color: #fff;
-      opacity: 0.9;
-    }
-  }
-
-  .hover-white {
-    &:hover {
-      background-color: #fff;
-      color: #7d9389;
-      opacity: 0.9;
-    }
-  }
-
-  .hover-green {
-    &:hover {
-      background-color: #7d9389;
-      color: #fff;
-      opacity: 0.9;
-    }
-  }
-
-  .material-icons.md-18 {
-    font-size: 18px;
-  }
-
-  .material-icons.md-24 {
-    font-size: 24px;
-  }
-
-  .material-icons.md-36 {
-    font-size: 36px;
-  }
-
-  .material-icons.md-48 {
-    font-size: 48px;
-  }
-  
-  h4 {
-    font-size: 1.15em;
-  }
-
-  h5 {
-    font-size: 1.05em;
   }
 </style>
