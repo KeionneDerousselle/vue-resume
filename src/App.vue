@@ -55,6 +55,7 @@
 
   body {
     position: relative;
+    overflow-x: hidden;
   }
 
   #app {
