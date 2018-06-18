@@ -14,7 +14,7 @@
           </div>
           <hr>
           <h5>Bachelor of Science in Computer Science</h5>
-          <h5>Graduated cum laude with a GPA of 3.54 out of a possible 4.0</h5>
+          <h5>Graduated Cum Laude with a GPA of 3.54 out of a possible 4.0</h5>
         </div>
         <div class="w-100" data-aos="slide-right" data-aos-duration="1500">
           <div class="education-title">
