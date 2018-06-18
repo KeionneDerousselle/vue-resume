@@ -47,11 +47,23 @@
 
   .header-title h1 {
     letter-spacing: 6px;
+    font-size: 2rem;
   }
 
   .header-title h2 {
     font-weight: 700;
     letter-spacing: 3px;
+    font-size: 1.5rem;
+  }
+
+  @media(min-width: 567px){
+    .header-title h1 {
+      font-size: 2.3rem;
+    }
+
+    .header-title h2 {
+      font-size: 1.8rem;
+    }
   }
 </style>
 

@@ -1,5 +1,5 @@
 <template>
-  <nav id="resume-nav" class="navbar navbar-expand-md navbar-dark sticky-top">
+  <nav id="resume-nav" class="navbar navbar-expand-lg navbar-dark sticky-top">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinksSection" aria-controls="navbarLinksSection" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
