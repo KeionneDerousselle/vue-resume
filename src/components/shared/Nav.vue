@@ -39,8 +39,10 @@
 </script>
 
 <style lang="scss" scoped>
+  @import "../../styles/variables.scss";
+
   nav {
-    background-color: #000;
+    background-color: $black;
 
     .nav-container {
       margin-left: auto;
@@ -57,7 +59,7 @@
       padding-left: 0;
       padding-right: 0;
       padding-bottom: 3px;
-      color: #fff !important;
+      color: $white !important;
       user-select: none;
       text-transform: uppercase;
       letter-spacing: 3px;
@@ -74,11 +76,11 @@
 
       &:hover::after {
         width: 100%;
-        background: #b0a68d;
+        background: $tan;
       }
 
       &.active {
-        color: #b0a68d !important;
+        color: $tan !important;
       }
     }
   }

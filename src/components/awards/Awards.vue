@@ -1,6 +1,6 @@
 <template>
   <app-section section-title="Awards" id="awards">
-    <div class="awards-section">
+    <div class="section-container">
       <h4
         v-for="(award, index) in awards"
         :key="award"
@@ -35,7 +35,5 @@
 </script>
 
 <style lang="scss" scoped>
-  .awards-section {
-    margin: 2rem 0;
-  }
+  @import "../../styles/variables.scss";
 </style>

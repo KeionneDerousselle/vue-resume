@@ -2,7 +2,7 @@
   <app-section section-title="Education" id="education">
     <div class="education-container">
       <div class="w-100">
-        <div class="education-icon" data-aos="zoom-in" data-aos-duration="1500">
+        <div class="education-icon text-center" data-aos="zoom-in" data-aos-duration="1500">
           <i class="material-icons md-48">school</i>
         </div>
       </div>
@@ -39,13 +39,14 @@
 </script>
 
 <style lang="scss" scoped>
+  @import "../../styles/variables.scss";
+
   .education-container {
-    margin-top: 2rem;
+    margin-top: $space;
   }
 
   .education-icon {
-    color: #7d9389;
-    text-align: center;
+    color: $green-darker;
   }
 
   .education-section {
@@ -54,7 +55,7 @@
 
   .education-title {
     text-transform: uppercase;
-    color: #7d9389;
+    color: $green-darker;
     margin-bottom: 1rem;
     height: 1.5rem;
     display: flex;

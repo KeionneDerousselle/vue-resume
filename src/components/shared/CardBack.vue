@@ -1,10 +1,10 @@
 <template>
   <app-card-side class="card-side side-back" :onCardClicked="onBackSideClicked">
     <div slot="card-content">
-      <div class="back-title">
-        <h4>{{ title }}</h4>
+      <div class="back-title flex-center">
+        <h4 class="text-center">{{ title }}</h4>
       </div>
-      <div class="container back-content">
+      <div class="container back-content flex-center">
         <slot name="content"></slot>
       </div>
       <div class="btn-container">
@@ -38,25 +38,17 @@
 </script>
 
 <style lang="scss">
+  @import "../../styles/variables.scss";
+
   .side-back {
-    color: #7d9389;
+    color: $green-darker;
     transform: rotateY(180deg);
 
     .back-title {
       height: 6rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      h4 {
-        text-align: center;
-      }
     }
 
     .back-content {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       height: 14rem;
     }
   }

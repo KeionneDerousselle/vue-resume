@@ -19,17 +19,19 @@
   };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+  @import "../../styles/variables.scss";
+
   section h3 {
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 1.25rem;
     font-weight: 600;
-    color: #878359;
+    color: $tan-green;
   }
 
   section hr {
-    border-top: 1px solid #878359;
+    border-top: 1px solid $tan-green;
   }
 
   section h4 {

@@ -51,11 +51,10 @@
 </script>
 
 <style lang="scss">
-  $gray: #ccc;
-  $darker-gray: darken($gray, 50%);
+  @import '../../styles/variables.scss';
 
   .about {
-    color: $darker-gray;
+    color: $gray-darker;
 
     .my-picture {
       img {
@@ -63,12 +62,6 @@
         border-radius: 10%;
         margin-top: 2rem;
       }
-    }
-
-    .flex-center {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
     }
 
     .about-section {

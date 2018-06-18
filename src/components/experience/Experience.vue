@@ -1,6 +1,6 @@
 <template>
   <app-section section-title="Experience" id="experience">
-    <div class="experience-container">
+    <div class="section-container">
       <app-job-cards :jobs="jobs">
       </app-job-cards>
     </div>
@@ -61,8 +61,6 @@
 </script>
 
 <style lang="scss" scoped>
-  .experience-container {
-    margin: 2rem 0;
-  }
+  @import "../../styles/variables.scss";
 </style>
 

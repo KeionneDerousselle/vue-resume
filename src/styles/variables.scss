@@ -1,0 +1,48 @@
+$white: #fff;
+// $white-darker: #;
+
+$green: #ACB9B3;
+$green-darker: #7d9389;
+$green-darkest: darken($green-darker, 15%);
+
+$tan-green: #878359;
+$tan: #b0a68d;
+
+$gray: #ccc;
+$gray-darker: darken($gray, 50%);
+$form-gray: #4d4d4d;
+$copyright-gray: #8f9aa7;
+
+$black-light: #1b1b18;
+$black: #000;
+
+$space: 2rem;
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-container {
+  margin: $space 0;
+}
+
+.margin-bottom-2 {
+  margin-bottom: $space;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+  list-style-type: none;
+}

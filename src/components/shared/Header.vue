@@ -13,7 +13,9 @@
   </header>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+  @import "../../styles/variables.scss";
+
   header {
     height: 100%;
   }
@@ -34,7 +36,7 @@
   .header-title {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
     font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #fff;
+    color: $white;
     text-transform: uppercase;
   }
 

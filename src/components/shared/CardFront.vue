@@ -1,7 +1,7 @@
 <template>
   <app-card-side class="card-side side-front" :onCardClicked="onFrontSideClicked">
     <div slot="card-content" class="shadow">
-      <div class="title-container container">
+      <div class="title-container container text-center flex-column">
         <h4>{{ title }}</h4>
         <slot name="content"></slot>
       </div>
@@ -35,15 +35,12 @@
 </script>
 
 <style lang="scss">
-  .side-front {
-    background-color: #7d9389;
-    color: #fff;
-    transition: all 0.8s ease;
+  @import "../../styles/variables.scss";
 
-    .title-container {
-      text-align: center;
-      flex-direction: column;
-    }
+  .side-front {
+    background-color: $green-darker;
+    color: $white;
+    transition: all 0.8s ease;
 
     .shadow {
       height: 100%;

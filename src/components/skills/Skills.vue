@@ -1,10 +1,10 @@
 scaff
 <template>
   <app-section section-title="Skills" id="skills">
-    <div class="skills">
+    <div class="section-container">
       <div class="row about-section">
         <div class="col-md" v-for="(skillSet, index) in skillSets" :key="`${skillSet}${index}`">
-          <div class="skill-set-title">
+          <div class="skill-set-title text-center margin-bottom-2">
             <h4>{{ skillSet.skillSetTitle }}</h4>
             <hr>
           </div>
@@ -144,19 +144,14 @@ scaff
 </script>
 
 <style lang="scss" scoped>
-  .skills {
-    margin: 2rem 0;
-  }
+  @import "../../styles/variables.scss";
 
   .skill-set-title {
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
     h4 {
       text-transform: uppercase;
       letter-spacing: 2px;
       font-weight: 700;
-      height: 2rem;
+      height: $space;
     }
   }
 </style>

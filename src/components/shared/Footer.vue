@@ -52,9 +52,11 @@
 </script>
 
 <style lang="scss" scoped>
+  @import "../../styles/variables.scss";
+
   footer {
-    background-color: #1b1b18;
-    color: #fff;
+    background-color: $black-light;
+    color: $white;
     flex-shrink: 0;
     min-height: 20rem;
     position: relative;
@@ -65,7 +67,7 @@
       height: 50px;
       width: 50px;
       cursor: pointer;
-      background-color: #7d9389;
+      background-color: $green-darker;
       display: inline-block;
       transform: translate(0, 0);
       transition: background 0.5s;
@@ -73,7 +75,7 @@
       right: 0;
 
       &:hover {
-        background-color: darken(#7d9389, 15%);
+        background-color: $green-darkest;
       }
     }
 
@@ -85,14 +87,14 @@
       }
 
       hr {
-        border-color: #fff;
+        border-color: $white;
       }
 
       a {
         text-decoration: none;
-        color: #fff;
+        color: $white;
         &:hover {
-          color: #7d9389;
+          color: $green-darker;
         }
       }
 
@@ -109,7 +111,7 @@
 
         &::placeholder {
           text-transform: uppercase;
-          color: #4d4d4d;
+          color: $form-gray;
           letter-spacing: 1px;
           font-size: 14px;
         }
@@ -127,7 +129,7 @@
         }
 
         &:focus {
-          outline: 3px solid #4d4d4d;
+          outline: 3px solid $form-gray;
         }
       }
 
@@ -154,14 +156,14 @@
       text-align: center;
       text-transform: uppercase;
       letter-spacing: 2px;
-      color: #8f9aa7;
-      background-color: #000;
+      color: $copyright-gray;
+      background-color: $black;
       height: 4rem;
       display: flex;
       align-items: center;
       font-size: 14px;
       .year {
-        color: #ACB9B3;
+        color: $green;
       }
     }
   }

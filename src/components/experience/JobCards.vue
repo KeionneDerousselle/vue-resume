@@ -38,9 +38,11 @@
 </script>
 
 <style lang="scss" scoped>
+  @import "../../styles/variables.scss";
+
   div.cards-container:not(:last-child) {
     .card-container {
-      margin-bottom: 2rem;
+      margin-bottom: $space;
     }
   }
 

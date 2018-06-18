@@ -26,6 +26,8 @@
 </script>
 
 <style lang="scss" scoped>
+  @import "../../styles/variables.scss";
+
   [data-aos="fill-bar"] {
     width: 0%;
     transition-property: width;
@@ -49,7 +51,7 @@
       top: 0;
       left: 0;
       position: absolute;
-      background-color: #7d9389;
+      background-color: $green-darker;
       padding: 0;
       opacity: 1;
       // transition: 1.1s 0.2s width ease-in-out;

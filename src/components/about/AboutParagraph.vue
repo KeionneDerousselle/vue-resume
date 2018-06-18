@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="about-icon">
+    <div class="about-icon margin-bottom-2 text-center">
       <i class="material-icons md-48">{{ icon }}</i>
     </div>
     <p>
@@ -25,11 +25,11 @@
   };
 </script>
 
-<style>
-.about-icon {
-  text-align: center;
-  color: #7d9389;
-  height: 2rem;
-  margin-bottom: 2rem;
-}
+<style lang="scss" scoped>
+  @import "../../styles/variables.scss";
+
+  .about-icon {
+    color: $green-darker;
+    height: $space;
+  }
 </style>

@@ -19,9 +19,9 @@
 </script>
 
 <style lang="scss" scoped>
+  @import "../../styles/variables.scss";
+
   ul {
-    list-style: none;
-    list-style-type: none;
     padding: 0;
     margin: 0;
 
