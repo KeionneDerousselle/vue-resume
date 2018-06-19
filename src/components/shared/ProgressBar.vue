@@ -1,32 +1,16 @@
 <template>
   <div class="skill-bar">
-    <div :style="cssProps" class="skill-bar fill" data-aos="fill-bar" data-aos-duration="2000">
+    <div class="skill-bar fill" :data-aos="`fill-bar-${percent - 5}`" data-aos-duration="2000">
     </div>
   </div>
 </template>
 
 <script>
-// :style="{width: `${percent - 5}%`}"
   export default {
     props: {
       percent: {
         type: Number,
         required: true
-      }
-    },
-
-    computed: {
-      cssProps(){
-        return {
-          //'--width': `${this.percent -5}%`,
-          '[data-aos="fill-bar"]': {
-            width: '0%',
-            'transition-property': 'width'
-          },
-          '[data-aos="fill-bar"] .aos-animate': {
-            width: `${this.percent -5}%`
-          }
-        }
       }
     }
   };
@@ -35,11 +19,13 @@
 <style lang="scss" scoped>
   @import "../../styles/variables.scss";
 
-  [data-aos="fill-bar"] {
-    width: 0%;
-    transition-property: width;
-    &.aos-animate {
-      width: var(--width);
+  @for $i from 60 through 100 {
+    [data-aos="fill-bar-#{$i}"] {
+      width: 0%;
+      transition-property: width;
+      &.aos-animate {
+        width: $i + 0%;
+      }
     }
   }
 
@@ -61,7 +47,6 @@
       background-color: $green-darker;
       padding: 0;
       opacity: 1;
-      // transition: 1.1s 0.2s width ease-in-out;
     }
 
     span {

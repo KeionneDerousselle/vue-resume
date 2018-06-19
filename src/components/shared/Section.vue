@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="container">
-      <h3>{{ sectionTitle }}</h3>
+      <h3 :id="id">{{ sectionTitle }}</h3>
       <hr>
       <div>
         <slot></slot>
@@ -13,6 +13,9 @@
 <script>
   export default {
     props: {
+      id: {
+        type: String
+      },
       sectionTitle: {
         type: String,
         required: true

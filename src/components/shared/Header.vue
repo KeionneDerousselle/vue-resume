@@ -1,5 +1,5 @@
 <template>
-  <header id="home">
+  <header>
     <div class="header-parallax">
       <div class="header-padding">
         <div class="header-title">

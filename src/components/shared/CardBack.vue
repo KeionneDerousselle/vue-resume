@@ -1,13 +1,15 @@
 <template>
-  <app-card-side class="card-side side-back" :onCardClicked="onBackSideClicked">
+  <app-card-side class="side-back" :onCardClicked="onBackSideClicked">
     <div slot="card-content">
-      <div class="back-title flex-center">
-        <h4 class="text-center">{{ title }}</h4>
+      <div class="card-content-container">
+        <div class="back-title flex-center">
+          <h4 class="text-center">{{ title }}</h4>
+        </div>
+        <div class="back-content container">
+          <slot name="content"></slot>
+        </div>
       </div>
-      <div class="container back-content flex-center">
-        <slot name="content"></slot>
-      </div>
-      <div class="btn-container">
+      <div class="card-btn-container">
         <button class="btn btn-outline-green" @click="onBackSideClicked()">
           Back
         </button>
@@ -46,11 +48,29 @@
     transform: rotateY(180deg);
 
     .back-title {
-      height: 6rem;
+      h4 {
+        padding: $space;
+      }
     }
 
     .back-content {
-      height: 14rem;
+      min-height: 24rem;
+      height: 24rem;
+    }
+
+    .btn-container {
+      padding: 2rem 0;
+      height: inherit;
+    }
+
+    @media (min-width: 992px) {
+      .back-title {
+        height: 6rem;
+      }
+
+      .back-content {
+        height: 14rem;
+      }
     }
   }
 </style>

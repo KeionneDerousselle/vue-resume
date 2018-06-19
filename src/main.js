@@ -12,7 +12,10 @@ Vue.use(VueScrollTo, {
   container: 'body',
   duration: 500,
   easing: 'ease',
-  offset: 0,
+  offset: () => {
+    const element = document.getElementById('resume-nav');
+    return -element.clientHeight - 25;
+  },
   cancelable: true,
   onStart: false,
   onDone: false,

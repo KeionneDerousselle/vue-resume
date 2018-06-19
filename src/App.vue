@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <app-header></app-header>
+    <app-header id="home"></app-header>
     <div class="content">
       <app-nav></app-nav>
       <div class="content-padding">
