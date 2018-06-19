@@ -1,6 +1,6 @@
 <template>
   <div class="background-light">
-    <app-section section-title="Experience" id="experience">
+    <app-section section-title="Experience">
       <div class="section-container">
         <app-job-cards :jobs="jobs">
         </app-job-cards>

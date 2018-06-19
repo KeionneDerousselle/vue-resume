@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <app-header></app-header>
+    <app-header id="home"></app-header>
     <div class="content">
       <app-nav></app-nav>
       <div class="content-padding">
-        <app-about>
+        <app-about id="about">
         </app-about>
-        <app-skills></app-skills>
-        <app-experience>
+        <app-skills id="skills"></app-skills>
+        <app-experience id="experience">
         </app-experience>
-        <app-education>
+        <app-education id="education">
         </app-education>
-        <app-awards>
+        <app-awards id="awards">
         </app-awards>
       </div>
     </div>

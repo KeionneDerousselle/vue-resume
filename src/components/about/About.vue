@@ -1,5 +1,5 @@
 <template>
-  <div class="background-light" id="about">
+  <div class="background-light">
     <app-section section-title="About Me">
       <div class="row">
         <div class="col-md">
