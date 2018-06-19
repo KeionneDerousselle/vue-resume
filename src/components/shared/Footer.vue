@@ -15,7 +15,7 @@
             <p>
               <b>E:</b> knnderousselle@gmail.com</p>
             <p>
-              <b>P:</b> +1-337-730-5608</p>
+              <b>P:</b> +1-337-739-5608</p>
             <p>
               <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/keionnederousselle/">LinkedIn</a>
             </p>
