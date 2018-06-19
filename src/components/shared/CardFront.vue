@@ -2,7 +2,7 @@
   <app-card-side class="card-side side-front" :onCardClicked="onFrontSideClicked">
     <div slot="card-content" class="shadow">
       <div class="title-container container text-center flex-column">
-        <h4>{{ title }}</h4>
+        <h4 class="ie-container">{{ title }}</h4>
         <slot name="content"></slot>
       </div>
       <div class="btn-container">

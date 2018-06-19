@@ -17,6 +17,10 @@ $black: #000;
 
 $space: 2rem;
 
+.ie-container{
+  width: inherit;
+}
+
 .background-light {
   padding: $space 0;
   background: $white;

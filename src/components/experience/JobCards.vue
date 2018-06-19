@@ -7,7 +7,7 @@
             <h5>{{ job.jobTitle }}</h5>
             <h5>{{ job.timeFrame }}</h5>
           </div>
-          <div slot="back">
+          <div slot="back" class="ie-container">
             <app-job-tasks :jobTasks="job.jobTasks"></app-job-tasks>
           </div>
         </app-card>
