@@ -52,12 +52,15 @@
       font-size: 1.05em;
     }
 
-    .title-container,
-    .btn-container {
-      height: 20rem;
+    .card-content-container {
+      min-height: 30rem;
+      height: 30rem;
+    }
+
+    .card-btn-container {
+      height: 10rem;
+      min-height: 10rem;
       display: flex;
-      flex-grow: 1;
-      -webkit-flex-grow: 1;
       justify-content: center;
       align-items: center;
     }

@@ -1,13 +1,15 @@
 <template>
   <app-card-side class="side-back" :onCardClicked="onBackSideClicked">
     <div slot="card-content">
-      <div class="back-title flex-center">
-        <h4 class="text-center">{{ title }}</h4>
+      <div class="card-content-container">
+        <div class="back-title flex-center">
+          <h4 class="text-center">{{ title }}</h4>
+        </div>
+        <div class="back-content container">
+          <slot name="content"></slot>
+        </div>
       </div>
-      <div class="back-content container">
-        <slot name="content"></slot>
-      </div>
-      <div class="btn-container">
+      <div class="card-btn-container">
         <button class="btn btn-outline-green" @click="onBackSideClicked()">
           Back
         </button>
