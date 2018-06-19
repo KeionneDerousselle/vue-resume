@@ -7,7 +7,7 @@
             <h5>{{ job.jobTitle }}</h5>
             <h5>{{ job.timeFrame }}</h5>
           </div>
-          <div slot="back" class="ie-container">
+          <div slot="back" class="ie-container back-slot">
             <app-job-tasks :jobTasks="job.jobTasks"></app-job-tasks>
           </div>
         </app-card>
@@ -46,9 +46,19 @@
     }
   }
 
+  .back-slot {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
   @media (min-width: 992px) {
     .card-container {
       margin-bottom: 0;
+    }
+
+    .back-slot {
+      display: inherit;
     }
   }
 </style>

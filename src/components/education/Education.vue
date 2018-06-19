@@ -55,7 +55,6 @@
     text-transform: uppercase;
     color: $green-darker;
     margin-bottom: 1rem;
-    height: 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -4,7 +4,7 @@
       <div class="back-title flex-center">
         <h4 class="text-center">{{ title }}</h4>
       </div>
-      <div class="container back-content flex-center">
+      <div class="back-content container">
         <slot name="content"></slot>
       </div>
       <div class="btn-container">
@@ -46,11 +46,29 @@
     transform: rotateY(180deg);
 
     .back-title {
-      height: 6rem;
+      h4 {
+        padding: $space;
+      }
     }
 
     .back-content {
-      height: 14rem;
+      min-height: 24rem;
+      height: 24rem;
+    }
+
+    .btn-container {
+      padding: 2rem 0;
+      height: inherit;
+    }
+
+    @media (min-width: 992px) {
+      .back-title {
+        height: 6rem;
+      }
+
+      .back-content {
+        height: 14rem;
+      }
     }
   }
 </style>
