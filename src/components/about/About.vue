@@ -1,6 +1,6 @@
 <template>
   <div class="background-light">
-    <app-section section-title="About Me">
+    <app-section section-title="About Me" id="about">
       <div class="row">
         <div class="col-md">
           <div class="flex-center picture-section">

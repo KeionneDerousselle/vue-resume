@@ -4,14 +4,14 @@
     <div class="content">
       <app-nav></app-nav>
       <div class="content-padding">
-        <app-about id="about">
+        <app-about>
         </app-about>
-        <app-skills id="skills"></app-skills>
-        <app-experience id="experience">
+        <app-skills></app-skills>
+        <app-experience>
         </app-experience>
-        <app-education id="education">
+        <app-education>
         </app-education>
-        <app-awards id="awards">
+        <app-awards>
         </app-awards>
       </div>
     </div>

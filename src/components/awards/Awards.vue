@@ -1,6 +1,6 @@
 <template>
   <div class="background-light">
-    <app-section section-title="Awards">
+    <app-section section-title="Awards" id="awards">
       <div class="section-container">
         <h4 v-for="(award, index) in awards" :key="award" data-aos="fade" :data-aos-delay="index == 0 ? 0 : (index * 650)" data-aos-duration="650">
           {{ award }}
