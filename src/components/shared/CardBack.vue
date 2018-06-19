@@ -1,5 +1,5 @@
 <template>
-  <app-card-side class="card-side side-back" :onCardClicked="onBackSideClicked">
+  <app-card-side class="side-back" :onCardClicked="onBackSideClicked">
     <div slot="card-content">
       <div class="back-title flex-center">
         <h4 class="text-center">{{ title }}</h4>
