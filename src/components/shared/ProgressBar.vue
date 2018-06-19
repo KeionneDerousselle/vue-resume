@@ -18,7 +18,14 @@
     computed: {
       cssProps(){
         return {
-          '--width': `${this.percent -5}%`
+          // '--width': `${this.percent -5}%`
+          '[data-aos="fill-bar"]': {
+            width: '0%',
+            'transistion-property': 'width'
+          },
+          '[data-aos="fill-bar"] .aos-animate': {
+            width: `${this.percent -5}%`
+          }
         }
       }
     }
