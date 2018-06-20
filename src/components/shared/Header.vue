@@ -1,14 +1,17 @@
 <template>
   <header>
     <div class="header-parallax">
-      <div class="header-padding">
+      <span id="headerImage" role="img" aria-label="Laptop and plant">
+        <span class="inner"></span>
+      </span>
+      <!-- <div class="header-padding">
         <div class="header-title">
           <div class="container">
             <h1>Keionne Derousselle</h1>
             <h2>Software Developer</h2>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </header>
 </template>
@@ -20,13 +23,54 @@
     height: 100%;
   }
 
-  .header-parallax {
-    height: 100%;
-    background-image: url("../../assets/headerImage.jpg");
+  .header-parallax #headerImage{
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+    background-image: url("../../assets/320.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-size: 100%;
+    background-position: 50% 50%;
+   // background-attachment: fixed;
+
+    .inner {
+      padding-top: 65.5%;
+      display: block;
+      height: 0;
+    }
+  }
+
+  @media (min-width: 400px) {
+    .header-parallax #headerImage {
+      background-image: url("../../assets/400.jpg");
+    }
+  }
+
+  @media (min-width: 540px) {
+    .header-parallax #headerImage {
+      background-image: url("../../assets/540.jpg");
+    }
+  }
+
+  @media (min-width: 900px) {
+    .header-parallax #headerImage {
+      background-image: url("../../assets/900.jpg");
+    }
+  }
+
+  @media (min-width: 1500px) {
+    .header-parallax #headerImage {
+      background-image: url("../../assets/1500.jpg");
+    }
+  }
+
+  @media (min-width: 1920px) {
+    .header-parallax #headerImage {
+      background-image: url("../../assets/4000.jpg");
+    }
   }
 
   .header-padding {
@@ -56,7 +100,7 @@
     font-size: 1.5rem;
   }
 
-  @media(min-width: 567px){
+  @media (min-width: 567px) {
     .header-title h1 {
       font-size: 2.3rem;
     }
