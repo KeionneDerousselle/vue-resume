@@ -2,16 +2,16 @@
   <header>
     <div class="header-parallax">
       <span id="headerImage" role="img" aria-label="Laptop and plant">
-        <span class="inner"></span>
-      </span>
-      <!-- <div class="header-padding">
-        <div class="header-title">
-          <div class="container">
-            <h1>Keionne Derousselle</h1>
-            <h2>Software Developer</h2>
+        <div class="header-padding">
+          <div class="header-title">
+            <div class="container">
+              <h1>Keionne Derousselle</h1>
+              <h2>Software Developer</h2>
+            </div>
           </div>
         </div>
-      </div> -->
+        <span class="inner"></span>
+      </span>
     </div>
   </header>
 </template>
@@ -48,12 +48,18 @@
   @media (min-width: 540px) {
     .header-parallax #headerImage {
       background-image: url("../../assets/540.jpg");
+      .inner {
+        padding-top: 65.56%;
+      }
     }
   }
 
   @media (min-width: 900px) {
     .header-parallax #headerImage {
       background-image: url("../../assets/900.jpg");
+      .inner {
+        padding-top: 65.56%;
+      }
     }
   }
 
@@ -61,6 +67,9 @@
     .header-parallax #headerImage {
       background-position: bottom;
       background-image: url("../../assets/1500.jpg");
+      .inner {
+        padding-top: 65.53%;
+      }
     }
   }
 
@@ -68,11 +77,16 @@
     .header-parallax #headerImage {
       background-position: bottom;
       background-image: url("../../assets/4000.jpg");
+      .inner {
+        padding-top: 65.5%;
+      }
     }
   }
 
   .header-padding {
-    padding-top: 90px;
+    top: 2rem;
+    position: absolute;
+    width: 100%;
   }
 
   .header-title {
