@@ -59,7 +59,6 @@
   }
 
   #app {
-    background-color: #e7e7e4;
     font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;

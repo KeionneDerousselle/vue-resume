@@ -19,11 +19,7 @@
 <style lang="scss" scoped>
   @import "../../styles/variables.scss";
 
-  header {
-    height: 100%;
-  }
-
-  .header-parallax #headerImage{
+  .header-parallax #headerImage {
     width: 100%;
     display: inline-block;
     vertical-align: middle;
@@ -32,9 +28,9 @@
     color: transparent;
     background-image: url("../../assets/320.jpg");
     background-repeat: no-repeat;
+    background-position: top;
     background-size: 100%;
-    background-position: 50% 50%;
-   // background-attachment: fixed;
+    background-attachment: fixed;
 
     .inner {
       padding-top: 65.5%;
@@ -63,12 +59,14 @@
 
   @media (min-width: 1500px) {
     .header-parallax #headerImage {
+      background-position: bottom;
       background-image: url("../../assets/1500.jpg");
     }
   }
 
   @media (min-width: 1920px) {
     .header-parallax #headerImage {
+      background-position: bottom;
       background-image: url("../../assets/4000.jpg");
     }
   }
