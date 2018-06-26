@@ -29,9 +29,6 @@
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 3px;
-    -webkit-box-shadow: 0 1.5rem 4rem rgba(#000, 0.3);
-    -moz-box-shawdow: 0 1.5rem 4rem rgba(#000, 0.3);
-    box-shadow: 0 1.5rem 4rem rgba(#000, 0.3);
     display: flex;
     display: -webkit-flex;
     display: -ms-flexbox;
