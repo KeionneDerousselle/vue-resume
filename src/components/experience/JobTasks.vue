@@ -28,10 +28,10 @@
     li {
       display: flex;
       align-items: center;
-      line-height: 40px;
+      line-height: 4rem;
 
       i {
-        margin-right: 16px;
+        margin-right: 1.6rem;
       }
     }
   }

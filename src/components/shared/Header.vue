@@ -3,18 +3,24 @@
     <div class="header-parallax">
       <span id="headerImage" role="img" aria-label="Laptop and plant">
         <div class="header-padding">
-          <div class="header-title">
-            <div class="container">
-              <h1>Keionne Derousselle</h1>
-              <h2>Software Developer</h2>
-            </div>
-          </div>
+          <app-header-primary mainText="Keionne Derousselle" subText="Software Developer"/>
         </div>
         <span class="inner"></span>
       </span>
     </div>
   </header>
 </template>
+
+<script>
+  import HeaderPrimary from './typography/HeaderPrimary';
+
+  export default {
+    components: {
+      appHeaderPrimary: HeaderPrimary
+    }
+  };
+</script>
+
 
 <style lang="scss" scoped>
   @import "../../styles/variables.scss";
@@ -84,42 +90,9 @@
   }
 
   .header-padding {
-    top: 2rem;
+    top: 3.2rem;
     position: absolute;
     width: 100%;
-  }
-
-  .header-title {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: $white;
-    text-transform: uppercase;
-  }
-
-  .header-title h1,
-  .header-title h2 {
-    font-weight: 700;
-  }
-
-  .header-title h1 {
-    letter-spacing: 6px;
-    font-size: 2rem;
-  }
-
-  .header-title h2 {
-    font-weight: 700;
-    letter-spacing: 3px;
-    font-size: 1.5rem;
-  }
-
-  @media (min-width: 567px) {
-    .header-title h1 {
-      font-size: 2.3rem;
-    }
-
-    .header-title h2 {
-      font-size: 1.8rem;
-    }
   }
 </style>
 

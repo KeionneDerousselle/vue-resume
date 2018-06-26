@@ -35,8 +35,8 @@
     justify-content: center;
     position: relative;
     background-color: #eee;
-    height: 28px;
-    margin: 0 0 15px 0;
+    height: 2.8rem;
+    margin: 0 0 1.5rem 0;
     border-radius: 3px;
     align-items: flex-end;
 
@@ -51,7 +51,7 @@
 
     span {
       z-index: 1;
-      padding: 0 15px 0 0;
+      padding: 0 1.5rem 0 0;
       display: initial;
     }
   }

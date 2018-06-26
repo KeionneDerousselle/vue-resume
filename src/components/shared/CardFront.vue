@@ -3,7 +3,7 @@
     <div slot="card-content" class="shadow">
       <div class="card-content-container container">
       <div class="title-container">
-        <h4 class="w-100">{{ title }}</h4>
+        <h3 class="w-100">{{ title }}</h3>
         <slot name="content"></slot>
       </div>
       </div>

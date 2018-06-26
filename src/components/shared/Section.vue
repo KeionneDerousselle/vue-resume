@@ -1,8 +1,7 @@
 <template>
   <section>
     <div class="container">
-      <h3 :id="id">{{ sectionTitle }}</h3>
-      <hr>
+      <app-header-secondary :id="id" :text="sectionTitle"/>
       <div>
         <slot></slot>
       </div>
@@ -11,6 +10,8 @@
 </template>
 
 <script>
+  import HeaderSecondary from "./typography/HeaderSecondary";
+
   export default {
     props: {
       id: {
@@ -20,24 +21,15 @@
         type: String,
         required: true
       }
+    },
+    components: {
+      appHeaderSecondary: HeaderSecondary
     }
   };
 </script>
 
 <style lang="scss" scoped>
   @import "../../styles/variables.scss";
-
-  section h3 {
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: $tan-green;
-  }
-
-  section hr {
-    border-top: 1px solid $tan-green;
-  }
 
   section h4 {
     font-size: 1.15rem;

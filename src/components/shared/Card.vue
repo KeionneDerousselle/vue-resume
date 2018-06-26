@@ -57,7 +57,7 @@
     -moz-perspective: 150rem;
     -webkit-perspective: 150rem;
     position: relative;
-    height: 40rem;
+    height: 50rem;
     -webkit-box-shadow: 0 .5rem 2rem rgba(#000, 0.3);
     -moz-box-shawdow: 0 .5rem 2rem rgba(#000, 0.3);
     box-shadow: 0 .5rem 2rem rgba(#000, 0.3);

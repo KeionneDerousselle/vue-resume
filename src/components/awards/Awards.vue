@@ -1,10 +1,17 @@
 <template>
   <div class="background-light">
-    <app-section section-title="Awards" id="awards">
+    <app-section section-title="Awards" id="awards" class="awards">
       <div class="section-container">
-        <h4 v-for="(award, index) in awards" :key="award" data-aos="fade" :data-aos-delay="index == 0 ? 0 : (index * 650)" data-aos-duration="650">
+        <p
+          class="award"
+          v-for="(award, index) in awards"
+          :key="award"
+          data-aos="fade"
+          :data-aos-delay="index == 0 ? 0 : (index * 650)"
+          data-aos-duration="650"
+        >
           {{ award }}
-        </h4>
+        </p>
       </div>
     </app-section>
   </div>
@@ -32,4 +39,10 @@
 
 <style lang="scss" scoped>
   @import "../../styles/variables.scss";
+
+  .award {
+    display: block;
+    margin-bottom: 1.6rem;
+    font-size: $default-font-size;
+  }
 </style>

@@ -8,22 +8,26 @@
           </div>
         </div>
         <div class="w-100 education-section" data-aos="slide-left" data-aos-duration="1500">
-          <div class="education-title">
-            <h4>Neumont University</h4>
-            <h4>2015</h4>
-          </div>
+          <h3>
+            <div class="education-title">
+              <span>Neumont University</span>
+              <span>2015</span>
+            </div>
+          </h3>
           <hr>
-          <h5>Bachelor of Science in Computer Science</h5>
-          <h5>Graduated Cum Laude with a GPA of 3.54 out of a possible 4.0</h5>
+          <p>Bachelor of Science in Computer Science</p>
+          <p>Graduated Cum Laude with a GPA of 3.54 out of a possible 4.0</p>
         </div>
         <div class="w-100" data-aos="slide-right" data-aos-duration="1500">
-          <div class="education-title">
-            <h4>Louisiana School for Math, Science, and the Arts</h4>
-            <h4>2012</h4>
-          </div>
+          <h3>
+            <div class="education-title">
+              <span>Louisiana School for Math, Science, and the Arts</span>
+              <span>2012</span>
+            </div>
+          </h3>
           <hr>
-          <h5>High School Diploma</h5>
-          <h5>Graduated with a GPA of 3.2 out of a possible 4.0</h5>
+          <p>High School Diploma</p>
+          <p>Graduated with a GPA of 3.2 out of a possible 4.0</p>
         </div>
       </div>
     </app-section>
@@ -53,13 +57,14 @@
 
   .education-title {
     text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    height: 3.2rem;
     color: $green-darker;
     margin-bottom: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    h4 {
-      font-weight: 700;
-    }
   }
 </style>

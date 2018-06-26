@@ -3,7 +3,7 @@
     <div slot="card-content">
       <div class="card-content-container">
         <div class="back-title flex-center">
-          <h4 class="text-center">{{ title }}</h4>
+          <h3 class="text-center">{{ title }}</h3>
         </div>
         <div class="back-content container">
           <slot name="content"></slot>

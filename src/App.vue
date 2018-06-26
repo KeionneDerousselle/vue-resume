@@ -45,6 +45,11 @@
 
 <style lang="scss">
   @import "./styles/variables.scss";
+  // TODO: create base styles file and import it
+  html {
+    font-size: 62.5%;
+    /* 62.5% of the font size size set by the user or browser*/
+  }
 
   html,
   body,
@@ -56,12 +61,10 @@
   body {
     position: relative;
     overflow-x: hidden;
-  }
-
-  #app {
+    // TODO: move to typography folder
     font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: $default-font-size;
+    line-height: 1.7;
     color: $black-light;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -75,6 +78,6 @@
   }
 
   .content-padding {
-    padding: 2rem 0px;
+    padding: 3rem 0;
   }
 </style>

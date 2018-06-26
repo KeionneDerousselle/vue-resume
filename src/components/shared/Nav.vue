@@ -35,7 +35,7 @@
 </template>
 
 <script>
-  export default { };
+  export default {};
 </script>
 
 <style lang="scss" scoped>
@@ -45,7 +45,7 @@
     background-color: $black;
 
     &.sticky-top {
-      top: -.1rem;
+      top: -0.1rem;
     }
 
     .nav-container {
@@ -58,22 +58,22 @@
     }
 
     .navbar-nav .nav-item .nav-link {
-      font-size: 14px !important;
-      margin-right: 1.25rem;
+      font-size: 1.4rem !important;
       padding-left: 0;
       padding-right: 0;
-      padding-bottom: 3px;
+      padding-bottom: 0.3rem;
+      margin-right: 2rem;
       color: $white !important;
       user-select: none;
       text-transform: uppercase;
-      letter-spacing: 3px;
+      letter-spacing: 0.3rem;
 
       &::after {
         content: "";
         display: block;
         margin: auto;
         height: 3px;
-        width: 0px;
+        width: 0;
         background: transparent;
         transition: width 0.5s ease, background-color 0.5s ease;
       }

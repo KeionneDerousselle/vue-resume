@@ -1,7 +1,7 @@
 <template>
   <div class="background-light">
     <app-section section-title="Experience" id="experience">
-      <div class="section-container">
+      <div>
         <app-job-cards :jobs="jobs">
         </app-job-cards>
       </div>
@@ -61,8 +61,3 @@
     }
   };
 </script>
-
-<style lang="scss" scoped>
-  @import "../../styles/variables.scss";
-</style>
-

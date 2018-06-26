@@ -11,9 +11,9 @@
         </div>
         <div class="col-md">
           <div class="overflow-hidden">
-          <div v-for="(about, index) in aboutMe" :key="`about-paragraph-${index}`">
-            <app-about-paragraph :icon="about.icon" :text="about.text" data-aos="fade-left" data-aos-duration="3000"></app-about-paragraph>
-          </div>
+            <div v-for="(about, index) in aboutMe" :key="`about-paragraph-${index}`">
+              <app-about-paragraph :icon="about.icon" :text="about.text" data-aos="fade-left" data-aos-duration="3000"></app-about-paragraph>
+            </div>
           </div>
         </div>
       </div>
@@ -76,6 +76,6 @@
   }
 
   .about-section {
-    margin-bottom: 2rem;
+    padding: 15rem 0;
   }
 </style>

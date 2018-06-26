@@ -4,8 +4,8 @@
       <div class="card-container">
         <app-card :cardTitle="job.companyName">
           <div slot="front">
-            <h5>{{ job.jobTitle }}</h5>
-            <h5>{{ job.timeFrame }}</h5>
+            <h4>{{ job.jobTitle }}</h4>
+            <h4>{{ job.timeFrame }}</h4>
           </div>
           <div slot="back" class="ie-container back-slot">
             <app-job-tasks :jobTasks="job.jobTasks"></app-job-tasks>

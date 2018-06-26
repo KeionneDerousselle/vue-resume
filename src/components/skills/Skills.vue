@@ -2,17 +2,15 @@ scaff
 <template>
   <div class="background-dark">
     <app-section section-title="Skills" id="skills">
-      <div class="section-container">
-        <div class="row about-section">
-          <div class="col-md" v-for="(skillSet, index) in skillSets" :key="`${skillSet}${index}`">
-            <div class="skill-set-title text-center margin-bottom-2">
-              <h4>{{ skillSet.skillSetTitle }}</h4>
-              <hr>
-            </div>
-            <div v-for="(skill, i) in skillSet.skills" :key="`${skill}${i}`">
-              {{ skill.name }}
-              <app-progress-bar :percent="skill.level"></app-progress-bar>
-            </div>
+      <div class="row">
+        <div class="col-md" v-for="(skillSet, index) in skillSets" :key="`${skillSet}${index}`">
+          <div class="skill-set-title text-center margin-bottom-2">
+            <app-header-tertiary :text="skillSet.skillSetTitle" />
+            <hr>
+          </div>
+          <div v-for="(skill, i) in skillSet.skills" :key="`${skill}${i}`">
+            {{ skill.name }}
+            <app-progress-bar :percent="skill.level"></app-progress-bar>
           </div>
         </div>
       </div>
@@ -22,6 +20,7 @@ scaff
 
 <script>
   import Section from "../shared/Section.vue";
+  import HeaderTertiary from "../shared/typography/HeaderTertiary.vue";
   import ProgressBar from "../shared/ProgressBar.vue";
 
   export default {
@@ -140,6 +139,7 @@ scaff
     },
     components: {
       appSection: Section,
+      appHeaderTertiary: HeaderTertiary,
       appProgressBar: ProgressBar
     }
   };
@@ -151,7 +151,7 @@ scaff
   .skill-set-title {
     h4 {
       text-transform: uppercase;
-      letter-spacing: 2px;
+      letter-spacing: 0.2rem;
       font-weight: 700;
       height: $space;
     }
