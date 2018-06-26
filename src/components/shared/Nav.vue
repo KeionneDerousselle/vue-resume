@@ -44,6 +44,10 @@
   nav {
     background-color: $black;
 
+    &.sticky-top {
+      top: -.1rem;
+    }
+
     .nav-container {
       margin-left: auto;
       margin-right: auto;
