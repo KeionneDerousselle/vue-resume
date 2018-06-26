@@ -2,8 +2,8 @@
   <div class="app-card">
     <app-card-front
       :style="{
-        transform : isOnFront ? 'none' : 'rotateY(180deg)',
-        '-webkit-transform': isOnFront ? 'none' : 'rotateY(180deg)'
+        transform : isOnFront ? 'none' : 'rotateY(-180deg)',
+        '-webkit-transform': isOnFront ? 'none' : 'rotateY(-180deg)'
       }"
       :onFrontSideClicked="handleFrontClicked"
       :title="cardTitle"
