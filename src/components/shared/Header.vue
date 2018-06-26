@@ -1,14 +1,17 @@
 <template>
   <header>
     <div class="header-parallax">
-      <div class="header-padding">
-        <div class="header-title">
-          <div class="container">
-            <h1>Keionne Derousselle</h1>
-            <h2>Software Developer</h2>
+      <span id="headerImage" role="img" aria-label="Laptop and plant">
+        <div class="header-padding">
+          <div class="header-title">
+            <div class="container">
+              <h1>Keionne Derousselle</h1>
+              <h2>Software Developer</h2>
+            </div>
           </div>
         </div>
-      </div>
+        <span class="inner"></span>
+      </span>
     </div>
   </header>
 </template>
@@ -16,21 +19,74 @@
 <style lang="scss" scoped>
   @import "../../styles/variables.scss";
 
-  header {
-    height: 100%;
+  .header-parallax #headerImage {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+    background-image: url("../../assets/320.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+    background-attachment: fixed;
+
+    .inner {
+      padding-top: 65.5%;
+      display: block;
+      height: 0;
+    }
   }
 
-  .header-parallax {
-    height: 100%;
-    background-image: url("../../assets/headerImage.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+  @media (min-width: 400px) {
+    .header-parallax #headerImage {
+      background-image: url("../../assets/400.jpg");
+    }
+  }
+
+  @media (min-width: 540px) {
+    .header-parallax #headerImage {
+      background-image: url("../../assets/540.jpg");
+      .inner {
+        padding-top: 65.56%;
+      }
+    }
+  }
+
+  @media (min-width: 900px) {
+    .header-parallax #headerImage {
+      background-image: url("../../assets/900.jpg");
+      .inner {
+        padding-top: 65.56%;
+      }
+    }
+  }
+
+  @media (min-width: 1500px) {
+    .header-parallax #headerImage {
+      background-position: bottom;
+      background-image: url("../../assets/1500.jpg");
+      .inner {
+        padding-top: 65.53%;
+      }
+    }
+  }
+
+  @media (min-width: 1920px) {
+    .header-parallax #headerImage {
+      background-position: bottom;
+      background-image: url("../../assets/4000.jpg");
+      .inner {
+        padding-top: 65.5%;
+      }
+    }
   }
 
   .header-padding {
-    padding-top: 90px;
+    top: 2rem;
+    position: absolute;
+    width: 100%;
   }
 
   .header-title {
@@ -56,7 +112,7 @@
     font-size: 1.5rem;
   }
 
-  @media(min-width: 567px){
+  @media (min-width: 567px) {
     .header-title h1 {
       font-size: 2.3rem;
     }
