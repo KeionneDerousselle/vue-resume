@@ -28,16 +28,27 @@
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
-    border-radius: .3rem;
+    -webkit-box-shadow: 0 0.5rem 2rem rgba(#000, 0.3);
+    -moz-box-shawdow: 0 0.5rem 2rem rgba(#000, 0.3);
+    box-shadow: 0 0.5rem 2rem rgba(#000, 0.3);
+    border-radius: 0.3rem;
     display: flex;
     display: -webkit-flex;
     display: -ms-flexbox;
     flex-direction: column;
     -webkit-flex-direction: column;
 
+    &:hover {
+      -webkit-transform: translateY(-1.5rem) scale(1.03);
+      transform: translateY(-1.5rem) scale(1.03);
+      -webkit-box-shadow: 0 2rem 4.5rem rgba(#000, 0.3);
+      -moz-box-shawdow: 0 2rem 4.5rem rgba(#000, 0.3);
+      box-shadow: 0 2rem 4.5rem rgba(#000, 0.3);
+    }
+
     h3,
     h4 {
-      letter-spacing: .2rem;
+      letter-spacing: 0.2rem;
       text-transform: uppercase;
     }
 
