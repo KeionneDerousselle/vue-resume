@@ -21,7 +21,7 @@
     -moz-transition: all 0.8s ease;
     transition: all 0.8s ease;
     position: absolute;
-    height: 50rem;
+    height: 52rem;
     top: 0;
     left: 0;
     width: 100%;

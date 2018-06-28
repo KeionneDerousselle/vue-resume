@@ -7,7 +7,7 @@
           v-for="(award, index) in awards"
           :key="award"
           data-aos="fade"
-          :data-aos-delay="index == 0 ? 0 : (index * 650)"
+          :data-aos-delay="index == 0 ? 0 : (index * 550)"
           data-aos-duration="650"
         >
           {{ award }}

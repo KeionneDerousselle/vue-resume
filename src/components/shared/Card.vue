@@ -57,7 +57,7 @@
     -moz-perspective: 150rem;
     -webkit-perspective: 150rem;
     position: relative;
-    height: 50rem;
+    height: 52rem;
   }
 </style>
 

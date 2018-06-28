@@ -52,7 +52,7 @@
   }
 
   .education-section {
-    margin-bottom: 5rem;
+    margin-bottom: 6rem;
   }
 
   .education-title {

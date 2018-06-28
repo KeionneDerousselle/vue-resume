@@ -3,17 +3,15 @@
     <app-header id="home"></app-header>
     <div class="content">
       <app-nav></app-nav>
-      <div class="content-padding">
-        <app-about>
-        </app-about>
-        <app-skills></app-skills>
-        <app-experience>
-        </app-experience>
-        <app-education>
-        </app-education>
-        <app-awards>
-        </app-awards>
-      </div>
+      <app-about>
+      </app-about>
+      <app-skills></app-skills>
+      <app-experience>
+      </app-experience>
+      <app-education>
+      </app-education>
+      <app-awards>
+      </app-awards>
     </div>
     <app-footer></app-footer>
   </div>
@@ -75,9 +73,5 @@
     flex-direction: column;
     min-height: 100vh;
     width: 100%;
-  }
-
-  .content-padding {
-    padding: 3rem 0;
   }
 </style>

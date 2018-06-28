@@ -48,14 +48,14 @@
     transform: rotateY(180deg);
 
     .back-title {
-      h4 {
-        padding: $space;
+      h3 {
+        padding: 4rem;
       }
     }
 
     .back-content {
-      min-height: 24rem;
-      height: 24rem;
+      // min-height: 24rem;
+      // height: 24rem;
     }
 
     .btn-container {
@@ -64,12 +64,17 @@
     }
 
     @media (min-width: 992px) {
-      .back-title {
-        height: 6rem;
+      .card-content-container {
+        min-height: 43rem;
       }
 
       .back-content {
-        height: 14rem;
+        min-height: 28rem;
+      }
+
+      .card-btn-container {
+        height: auto;
+        min-height: auto;
       }
     }
   }

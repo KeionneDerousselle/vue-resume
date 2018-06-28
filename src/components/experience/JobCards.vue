@@ -42,7 +42,7 @@
 
   div.cards-container:not(:last-child) {
     .card-container {
-      margin-bottom: $space;
+      margin-bottom: 6rem
     }
   }
 

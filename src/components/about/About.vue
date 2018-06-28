@@ -3,7 +3,7 @@
     <app-section section-title="About Me" id="about">
       <div class="row">
         <div class="col-md">
-          <div class="flex-center picture-section">
+          <div class="picture-section">
             <div data-aos="fade-right" data-aos-duration="2500" class="my-picture">
               <img src="../../assets/me.jpg" alt="Picture of Keionne">
             </div>
@@ -59,12 +59,14 @@
 
   .picture-section {
     height: 100%;
-    padding: $space 0;
+    padding-bottom: 10rem;
+    display: flex;
+    justify-content: center;
   }
 
   @media (min-width: 768px) {
     .picture-section {
-      padding: 0;
+      padding-bottom: 0;
     }
   }
 

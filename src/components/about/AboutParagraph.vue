@@ -30,12 +30,20 @@
 
   .about-paragraph {
     p {
-      margin-bottom: 1.6rem;
+      margin-bottom: 6rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .about-paragraph {
+      p {
+        margin-bottom: 1.6rem;
+      }
     }
   }
 
   .about-icon {
     color: $green-darker;
-    height: $space;
+    margin-bottom: 1rem;
   }
 </style>

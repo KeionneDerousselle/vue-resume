@@ -28,10 +28,35 @@
     li {
       display: flex;
       align-items: center;
-      line-height: 4rem;
+      line-height: 2.6rem;
 
       i {
-        margin-right: 1.6rem;
+        margin: 0 1.8rem;
+      }
+    }
+  }
+
+  @media (min-width: 540px) {
+    ul {
+      li {
+        line-height: 3.5rem;
+
+        i {
+          margin-right: 1.8rem;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+    @media (min-width: 992px) {
+    ul {
+      li {
+        line-height: 2.8rem;
+
+        i {
+          margin: 0 1.8rem;
+        }
       }
     }
   }

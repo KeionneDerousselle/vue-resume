@@ -1,7 +1,7 @@
 scaff
 <template>
   <div class="background-dark">
-    <app-section section-title="Skills" id="skills">
+    <app-section section-title="Skills" id="skills" class="skills-section">
       <div class="row">
         <div class="col-md" v-for="(skillSet, index) in skillSets" :key="`${skillSet}${index}`">
           <div class="skill-set-title text-center margin-bottom-2">
@@ -149,11 +149,12 @@ scaff
   @import "../../styles/variables.scss";
 
   .skill-set-title {
-    h4 {
-      text-transform: uppercase;
-      letter-spacing: 0.2rem;
-      font-weight: 700;
-      height: $space;
+    margin: 6rem 0;
+  }
+
+  @media (min-width: 768px) {
+    .skill-set-title {
+      margin: 2rem 0 4rem 0;
     }
   }
 </style>
