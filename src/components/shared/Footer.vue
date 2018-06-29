@@ -22,9 +22,15 @@
           </div>
           <div class="col-md">
             <form method="POST" action="https://formspree.io/knnderousselle@gmail.com">
-              <input type="text" aria-placeholder="Your Name" placeholder="Your Name" name="name">
-              <input type="text" aria-placeholder="Email Address" placeholder="Email Address" name="emailAddress">
-              <textarea cols="30" rows="6" placeholder="Message" aria-placeholder="Message" name="message"></textarea>
+              <label for="name" class="sr-only">Enter your name</label>
+              <input id="name" type="text" aria-placeholder="Your Name" placeholder="Your Name" name="name">
+
+              <label for="email-address" class="sr-only">Enter your email address</label>
+              <input id="email-address" type="text" aria-placeholder="Email Address" placeholder="Email Address" name="emailAddress">
+
+              <label for="message" class="sr-only">Enter a message</label>
+              <textarea id="message" cols="30" rows="6" placeholder="Message" aria-placeholder="Message" name="message"></textarea>
+              
               <div class="contact-btn-container">
                 <button class="btn btn-outline-white hover-green" type="submit">Submit</button>
               </div>
