@@ -61,16 +61,21 @@
     }
 
     .card-content-container {
-      min-height: 35rem;
-      height: 35rem;
+      min-height: 43rem;
+      height: 43rem;
     }
 
     .card-btn-container {
-      height: 15rem;
-      min-height: 15rem;
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+
+    @media (min-width: 992px) {
+      .card-btn-container {
+        height: auto;
+        min-height: auto;
+      }
     }
   }
 </style>

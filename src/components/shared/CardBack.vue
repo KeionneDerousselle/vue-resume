@@ -53,28 +53,14 @@
       }
     }
 
-    .back-content {
-      // min-height: 24rem;
-      // height: 24rem;
-    }
-
     .btn-container {
       padding: 2rem 0;
       height: inherit;
     }
 
     @media (min-width: 992px) {
-      .card-content-container {
-        min-height: 43rem;
-      }
-
       .back-content {
         min-height: 28rem;
-      }
-
-      .card-btn-container {
-        height: auto;
-        min-height: auto;
       }
     }
   }
