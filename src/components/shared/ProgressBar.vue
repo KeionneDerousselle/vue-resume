@@ -36,7 +36,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     position: relative;
-    background-color: #eee;
+    background-color: #e2e2e2;
     height: 2.8rem;
     margin: 0 0 1.5rem 0;
     border-radius: 3px;

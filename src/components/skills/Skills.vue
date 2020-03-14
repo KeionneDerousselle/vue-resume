@@ -1,33 +1,31 @@
 <template>
-  <div class="background-dark">
-    <app-section
-      id="skills"
-      section-title="Skills"
-      class="skills-section">
-      <div class="row">
+  <app-section
+    section-title="Skills"
+    class="skills-section">
+    <div class="row">
+      <div
+        v-for="(skillSet, index) in skillSets"
+        :key="`${skillSet}${index}`"
+        class="col-md">
+        <div class="skillbar__title-container text-center margin-bottom-2">
+          <h3 class="skillbar__title">
+            {{ skillSet.skillSetTitle }}
+          </h3>
+          <hr>
+        </div>
         <div
-          v-for="(skillSet, index) in skillSets"
-          :key="`${skillSet}${index}`"
-          class="col-md">
-          <div class="skill-set-title text-center margin-bottom-2">
-            <app-header-tertiary :text="skillSet.skillSetTitle" />
-            <hr>
-          </div>
-          <div
-            v-for="(skill, i) in skillSet.skills"
-            :key="`${skill}${i}`">
-            {{ skill.name }}
-            <app-progress-bar :percent="skill.level" />
-          </div>
+          v-for="(skill, i) in skillSet.skills"
+          :key="`${skill}${i}`">
+          {{ skill.name }}
+          <app-progress-bar :percent="skill.level" />
         </div>
       </div>
-    </app-section>
-  </div>
+    </div>
+  </app-section>
 </template>
 
 <script>
 import Section from '../shared/Section.vue'
-import HeaderTertiary from '../shared/typography/HeaderTertiary.vue'
 import ProgressBar from '../shared/ProgressBar.vue'
 
 export default {
@@ -138,7 +136,6 @@ export default {
   },
   components: {
     appSection: Section,
-    appHeaderTertiary: HeaderTertiary,
     appProgressBar: ProgressBar
   }
 }
@@ -147,13 +144,21 @@ export default {
 <style lang="scss" scoped>
   @import "../../styles/variables.scss";
 
-  .skill-set-title {
+  .skillbar__title-container {
     margin: 6rem 0;
   }
 
   @media (min-width: 768px) {
-    .skill-set-title {
+    .skillbar__title-container {
       margin: 2rem 0 4rem 0;
     }
+  }
+
+  .skillbar__title {
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    height: 3.2rem;
   }
 </style>

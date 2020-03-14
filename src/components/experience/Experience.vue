@@ -1,13 +1,9 @@
 <template>
-  <div class="background-light">
-    <app-section
-      id="experience"
-      section-title="Experience">
-      <div>
-        <app-job-cards :jobs="jobs" />
-      </div>
-    </app-section>
-  </div>
+  <app-section section-title="Experience">
+    <div>
+      <app-job-cards :jobs="jobs" />
+    </div>
+  </app-section>
 </template>
 
 <script>

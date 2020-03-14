@@ -5,11 +5,21 @@
       <app-nav
         id="resume-nav"
         :nav-links="navLinks" />
-      <app-about />
-      <app-skills />
-      <app-experience />
-      <app-education />
-      <app-awards />
+      <app-about
+        id="about"
+        class="background--dark" />
+      <app-skills
+        id="skills"
+        class="background--light" />
+      <app-experience
+        id="experience"
+        class="background--dark" />
+      <app-education
+        id="education"
+        class="background--light" />
+      <app-awards
+        id="awards"
+        class="background--dark" />
     </div>
     <app-footer />
   </div>
