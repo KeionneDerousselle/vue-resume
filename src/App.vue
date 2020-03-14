@@ -2,7 +2,9 @@
   <div id="app">
     <app-header id="home" />
     <div class="content">
-      <app-nav />
+      <app-nav
+        id="resume-nav"
+        :nav-links="navLinks" />
       <app-about />
       <app-skills />
       <app-experience />
@@ -33,7 +35,40 @@ export default {
     appEducation: Education,
     appAwards: Awards,
     appFooter: Footer
-  }
+  },
+
+  data: () => ({
+    navLinks: [
+      {
+        title: 'Home',
+        href: '#home'
+      },
+      {
+        title: 'About Me',
+        href: '#about'
+      },
+      {
+        title: 'Skills',
+        href: '#skills'
+      },
+      {
+        title: 'Experience',
+        href: '#experience'
+      },
+      {
+        title: 'Education',
+        href: '#education'
+      },
+      {
+        title: 'Awards',
+        href: '#awards'
+      },
+      {
+        title: 'Contact Me',
+        href: '#contact-me'
+      }
+    ]
+  })
 }
 </script>
 

@@ -15,6 +15,8 @@ Vue.use(VueScrollTo, {
   offset: () => {
     const element = document.getElementById('resume-nav')
 
+    console.log(element.clientHeight)
+
     return -element.clientHeight - 25
   },
   cancelable: true,

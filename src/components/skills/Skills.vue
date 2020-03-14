@@ -1,4 +1,3 @@
-scaff
 <template>
   <div class="background-dark">
     <app-section

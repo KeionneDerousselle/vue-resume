@@ -1,64 +1,30 @@
 <template>
   <nav
-    id="resume-nav"
     class="navbar navbar-expand-lg navbar-dark sticky-top">
     <button
-      class="navbar-toggler"
+      class="navbar-toggler navbar__toggle-button"
       type="button"
       data-toggle="collapse"
-      data-target="#navbarLinksSection"
-      aria-controls="navbarLinksSection"
+      data-target="#navbar__collapse-container"
+      aria-controls="navbar__collapse-container"
       aria-expanded="false"
       aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon" />
+      <span class=" navbar-toggler-icon navbar__toggle-button-icon" />
     </button>
 
     <div
-      id="navbarLinksSection"
-      class="collapse navbar-collapse">
-      <div class="nav-container">
-        <ul class="navbar-nav">
-          <li class="nav-item">
+      id="navbar__collapse-container"
+      class="collapse navbar-collapse navbar__collapse-container">
+      <div class="navbar__links-container">
+        <ul class="navbar-nav navbar__links">
+          <li
+            v-for="navLink in navLinks"
+            :key="navLink.title"
+            class="navbar__link-item">
             <a
-              v-scroll-to="`#home`"
-              class="nav-link"
-              href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a
-              v-scroll-to="`#about`"
-              class="nav-link"
-              href="#about">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a
-              v-scroll-to="`#skills`"
-              class="nav-link"
-              href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a
-              v-scroll-to="`#experience`"
-              class="nav-link"
-              href="#experience">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a
-              v-scroll-to="`#education`"
-              class="nav-link"
-              href="#education">Education</a>
-          </li>
-          <li class="nav-item">
-            <a
-              v-scroll-to="`#awards`"
-              class="nav-link"
-              href="#awards">Awards</a>
-          </li>
-          <li class="nav-item">
-            <a
-              v-scroll-to="`#contact-me`"
-              class="nav-link"
-              href="#contact-me">Contact Me</a>
+              v-scroll-to="navLink.href"
+              class="nav-link navbar__link"
+              :href="navLink.href">{{ navLink.title }}</a>
           </li>
         </ul>
       </div>
@@ -67,35 +33,52 @@
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    navLinks: {
+      type: Array,
+      default: () => ([])
+    }
+  }
+}
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   @import "../../styles/variables.scss";
 
-  nav {
+  .navbar {
     background-color: $black;
 
     &.sticky-top {
       top: -0.1rem;
     }
 
-    .nav-container {
+    .navbar__toggle-button {
+      font-size: 2rem;
+
+    .navbar__toggle-button-icon {
+        color: $white;
+        width: 3.5rem;
+        height: 3.5rem;
+      }
+    }
+
+    .navbar__links-container {
       margin-left: auto;
       margin-right: auto;
     }
 
-    #navbarLinksSection {
+    .navbar__collapse-container {
       background-color: inherit;
     }
 
-    .navbar-nav .nav-item .nav-link {
-      font-size: 1.4rem !important;
+    .navbar__links .navbar__link-item .navbar__link {
+      font-size: 1.4rem;
       padding-left: 0;
       padding-right: 0;
       padding-bottom: 0.3rem;
       margin-right: 2rem;
-      color: $white !important;
+      color: $white;
       user-select: none;
       text-transform: uppercase;
       letter-spacing: 0.3rem;
