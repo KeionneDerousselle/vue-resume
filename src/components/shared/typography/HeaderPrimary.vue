@@ -8,18 +8,18 @@
 </template>
 
 <script>
-  export default {
-    props: {
-      mainText: {
-        type: String,
-        required: true
-      },
+export default {
+  props: {
+    mainText: {
+      type: String,
+      required: true
+    },
 
-      subText: {
-        type: String
-      }
+    subText: {
+      type: String
     }
-  };
+  }
+}
 </script>
 
 <style lang="scss" scoped>

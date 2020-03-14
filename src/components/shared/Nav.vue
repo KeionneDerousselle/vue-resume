@@ -1,32 +1,64 @@
 <template>
-  <nav id="resume-nav" class="navbar navbar-expand-lg navbar-dark sticky-top">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinksSection" aria-controls="navbarLinksSection" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+  <nav
+    id="resume-nav"
+    class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarLinksSection"
+      aria-controls="navbarLinksSection"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" />
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarLinksSection">
+    <div
+      id="navbarLinksSection"
+      class="collapse navbar-collapse">
       <div class="nav-container">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#home" v-scroll-to="`#home`">Home</a>
+            <a
+              v-scroll-to="`#home`"
+              class="nav-link"
+              href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about" v-scroll-to="`#about`">About Me</a>
+            <a
+              v-scroll-to="`#about`"
+              class="nav-link"
+              href="#about">About Me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#skills" v-scroll-to="`#skills`">Skills</a>
+            <a
+              v-scroll-to="`#skills`"
+              class="nav-link"
+              href="#skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#experience" v-scroll-to="`#experience`">Experience</a>
+            <a
+              v-scroll-to="`#experience`"
+              class="nav-link"
+              href="#experience">Experience</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#education" v-scroll-to="`#education`">Education</a>
+            <a
+              v-scroll-to="`#education`"
+              class="nav-link"
+              href="#education">Education</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#awards" v-scroll-to="`#awards`">Awards</a>
+            <a
+              v-scroll-to="`#awards`"
+              class="nav-link"
+              href="#awards">Awards</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact-me" v-scroll-to="`#contact-me`">Contact Me</a>
+            <a
+              v-scroll-to="`#contact-me`"
+              class="nav-link"
+              href="#contact-me">Contact Me</a>
           </li>
         </ul>
       </div>
@@ -35,7 +67,7 @@
 </template>
 
 <script>
-  export default {};
+export default {}
 </script>
 
 <style lang="scss" scoped>

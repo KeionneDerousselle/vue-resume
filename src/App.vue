@@ -1,44 +1,40 @@
 <template>
   <div id="app">
-    <app-header id="home"></app-header>
+    <app-header id="home" />
     <div class="content">
-      <app-nav></app-nav>
-      <app-about>
-      </app-about>
-      <app-skills></app-skills>
-      <app-experience>
-      </app-experience>
-      <app-education>
-      </app-education>
-      <app-awards>
-      </app-awards>
+      <app-nav />
+      <app-about />
+      <app-skills />
+      <app-experience />
+      <app-education />
+      <app-awards />
     </div>
-    <app-footer></app-footer>
+    <app-footer />
   </div>
 </template>
 
 <script>
-  import Header from "./components/shared/Header.vue";
-  import Nav from "./components/shared/Nav.vue";
-  import About from "./components/about/About.vue";
-  import Skills from "./components/skills/Skills.vue";
-  import Experience from "./components/experience/Experience.vue";
-  import Education from "./components/education/Education.vue";
-  import Awards from "./components/awards/Awards.vue";
-  import Footer from "./components/shared/Footer.vue";
+import Header from './components/shared/Header.vue'
+import Nav from './components/shared/Nav.vue'
+import About from './components/about/About.vue'
+import Skills from './components/skills/Skills.vue'
+import Experience from './components/experience/Experience.vue'
+import Education from './components/education/Education.vue'
+import Awards from './components/awards/Awards.vue'
+import Footer from './components/shared/Footer.vue'
 
-  export default {
-    components: {
-      appHeader: Header,
-      appNav: Nav,
-      appAbout: About,
-      appSkills: Skills,
-      appExperience: Experience,
-      appEducation: Education,
-      appAwards: Awards,
-      appFooter: Footer
-    }
-  };
+export default {
+  components: {
+    appHeader: Header,
+    appNav: Nav,
+    appAbout: About,
+    appSkills: Skills,
+    appExperience: Experience,
+    appEducation: Education,
+    appAwards: Awards,
+    appFooter: Footer
+  }
+}
 </script>
 
 <style lang="scss">

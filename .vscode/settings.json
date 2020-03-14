@@ -1,0 +1,38 @@
+{
+  // Spacing
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.trimAutoWhitespace": true,
+  "files.trimTrailingWhitespace": true,
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  // JS(ON)
+  "jest.autoEnable": false,
+  "jest.enableCodeLens": false,
+  "eslint.alwaysShowStatus": true,
+  "eslint.enable": true,
+  "eslint.nodePath": "/node_modules",
+  "eslint.options": {
+    "configFile": ".eslintrc.js",
+    "extensions": [
+      ".html",
+      ".js",
+      ".jsx",
+      ".scss",
+      ".vue"
+    ]
+  },
+  "eslint.validate": [
+    "html",
+    "vue",
+    "vue-html",
+    "javascript"
+  ],
+  "vetur.format.defaultFormatter.html": "none",
+  "vetur.validation.template": false,
+}

@@ -1,15 +1,17 @@
 <template>
   <div class="background-light">
-    <app-section section-title="Awards" id="awards" class="awards">
+    <app-section
+      id="awards"
+      section-title="Awards"
+      class="awards">
       <div class="section-container">
         <p
-          class="award"
           v-for="(award, index) in awards"
           :key="award"
+          class="award"
           data-aos="fade"
           :data-aos-delay="index == 0 ? 0 : (index * 550)"
-          data-aos-duration="650"
-        >
+          data-aos-duration="650">
           {{ award }}
         </p>
       </div>
@@ -18,23 +20,23 @@
 </template>
 
 <script>
-  import Section from "../shared/Section.vue";
+import Section from '../shared/Section.vue'
 
-  export default {
-    data() {
-      return {
-        awards: [
-          "Neumont Merit Scholarship",
-          "President's List",
-          "Dean's List",
-          "Featured Student"
-        ]
-      };
-    },
-    components: {
-      appSection: Section
+export default {
+  data() {
+    return {
+      awards: [
+        'Neumont Merit Scholarship',
+        "President's List",
+        "Dean's List",
+        'Featured Student'
+      ]
     }
-  };
+  },
+  components: {
+    appSection: Section
+  }
+}
 </script>
 
 <style lang="scss" scoped>

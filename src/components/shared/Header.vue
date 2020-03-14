@@ -1,26 +1,30 @@
 <template>
   <header>
     <div class="header-parallax">
-      <span id="headerImage" role="img" aria-label="Laptop and plant">
+      <span
+        id="headerImage"
+        role="img"
+        aria-label="Laptop and plant">
         <div class="header-padding">
-          <app-header-primary mainText="Keionne Derousselle" subText="Software Developer"/>
+          <app-header-primary
+            main-text="Keionne Derousselle"
+            sub-text="Software Developer" />
         </div>
-        <span class="inner"></span>
+        <span class="inner" />
       </span>
     </div>
   </header>
 </template>
 
 <script>
-  import HeaderPrimary from './typography/HeaderPrimary';
+import HeaderPrimary from './typography/HeaderPrimary'
 
-  export default {
-    components: {
-      appHeaderPrimary: HeaderPrimary
-    }
-  };
+export default {
+  components: {
+    appHeaderPrimary: HeaderPrimary
+  }
+}
 </script>
-
 
 <style lang="scss" scoped>
   @import "../../styles/variables.scss";
@@ -95,4 +99,3 @@
     width: 100%;
   }
 </style>
-

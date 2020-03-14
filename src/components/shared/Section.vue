@@ -1,31 +1,33 @@
 <template>
   <section>
     <div class="container">
-      <app-header-secondary :id="id" :text="sectionTitle"/>
+      <app-header-secondary
+        :id="id"
+        :text="sectionTitle" />
       <div>
-        <slot></slot>
+        <slot />
       </div>
     </div>
   </section>
 </template>
 
 <script>
-  import HeaderSecondary from "./typography/HeaderSecondary";
+import HeaderSecondary from './typography/HeaderSecondary'
 
-  export default {
-    props: {
-      id: {
-        type: String
-      },
-      sectionTitle: {
-        type: String,
-        required: true
-      }
+export default {
+  props: {
+    id: {
+      type: String
     },
-    components: {
-      appHeaderSecondary: HeaderSecondary
+    sectionTitle: {
+      type: String,
+      required: true
     }
-  };
+  },
+  components: {
+    appHeaderSecondary: HeaderSecondary
+  }
+}
 </script>
 
 <style lang="scss" scoped>

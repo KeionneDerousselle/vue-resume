@@ -1,13 +1,21 @@
 <template>
   <div class="background-dark">
-    <app-section section-title="Education" id="education">
+    <app-section
+      id="education"
+      section-title="Education">
       <div class="section-container overflow-hidden">
         <div class="w-100">
-          <div class="education-icon text-center" data-aos="zoom-in" data-aos-duration="1500">
+          <div
+            class="education-icon text-center"
+            data-aos="zoom-in"
+            data-aos-duration="1500">
             <i class="material-icons md-48">school</i>
           </div>
         </div>
-        <div class="w-100 education-section" data-aos="slide-left" data-aos-duration="1500">
+        <div
+          class="w-100 education-section"
+          data-aos="slide-left"
+          data-aos-duration="1500">
           <h3>
             <div class="education-title">
               <span>Neumont University</span>
@@ -18,7 +26,10 @@
           <p>Bachelor of Science in Computer Science</p>
           <p>Graduated Cum Laude with a GPA of 3.54 out of a possible 4.0</p>
         </div>
-        <div class="w-100" data-aos="slide-right" data-aos-duration="1500">
+        <div
+          class="w-100"
+          data-aos="slide-right"
+          data-aos-duration="1500">
           <h3>
             <div class="education-title">
               <span>Louisiana School for Math, Science, and the Arts</span>
@@ -35,13 +46,13 @@
 </template>
 
 <script>
-  import Section from "../shared/Section.vue";
+import Section from '../shared/Section.vue'
 
-  export default {
-    components: {
-      appSection: Section
-    }
-  };
+export default {
+  components: {
+    appSection: Section
+  }
+}
 </script>
 
 <style lang="scss" scoped>

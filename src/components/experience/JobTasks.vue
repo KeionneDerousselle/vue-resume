@@ -1,6 +1,8 @@
 <template>
   <ul>
-    <li v-for="(task, index) in jobTasks" :key="index">
+    <li
+      v-for="(task, index) in jobTasks"
+      :key="index">
       <i class="material-icons">done</i>
       {{ task }}
     </li>
@@ -8,14 +10,14 @@
 </template>
 
 <script>
-  export default {
-    props: {
-      jobTasks: {
-        type: Array,
-        required: true
-      }
+export default {
+  props: {
+    jobTasks: {
+      type: Array,
+      required: true
     }
-  };
+  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -61,4 +63,3 @@
     }
   }
 </style>
-

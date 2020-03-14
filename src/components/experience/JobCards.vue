@@ -1,14 +1,19 @@
 <template>
   <div class="row">
-    <div class="col-lg cards-container" v-for="job in jobs" :key="job.companyName">
+    <div
+      v-for="job in jobs"
+      :key="job.companyName"
+      class="col-lg cards-container">
       <div class="card-container">
-        <app-card :cardTitle="job.companyName">
+        <app-card :card-title="job.companyName">
           <div slot="front">
             <h4>{{ job.jobTitle }}</h4>
             <h4>{{ job.timeFrame }}</h4>
           </div>
-          <div slot="back" class="ie-container back-slot">
-            <app-job-tasks :jobTasks="job.jobTasks"></app-job-tasks>
+          <div
+            slot="back"
+            class="ie-container back-slot">
+            <app-job-tasks :job-tasks="job.jobTasks" />
           </div>
         </app-card>
       </div>
@@ -17,24 +22,22 @@
 </template>
 
 <script>
-  import Card from "../shared/Card.vue";
-  import Section from "../shared/Section.vue";
-  import JobTasks from "./JobTasks.vue";
+import Card from '../shared/Card.vue'
+import JobTasks from './JobTasks.vue'
 
-  export default {
-    props: {
-      jobs: {
-        type: Array,
-        required: true
-      }
-    },
-
-    components: {
-      appCard: Card,
-      appSection: Section,
-      appJobTasks: JobTasks
+export default {
+  props: {
+    jobs: {
+      type: Array,
+      required: true
     }
-  };
+  },
+
+  components: {
+    appCard: Card,
+    appJobTasks: JobTasks
+  }
+}
 </script>
 
 <style lang="scss" scoped>

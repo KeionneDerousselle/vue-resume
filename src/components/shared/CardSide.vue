@@ -1,18 +1,20 @@
 <template>
-  <div class="card-side" @click="onCardClicked()">
-    <slot name="card-content"></slot>
+  <div
+    class="card-side"
+    @click="onCardClicked()">
+    <slot name="card-content" />
   </div>
 </template>
 
 <script>
-  export default {
-    props: {
-      onCardClicked: {
-        type: Function,
-        required: true
-      }
+export default {
+  props: {
+    onCardClicked: {
+      type: Function,
+      required: true
     }
-  };
+  }
+}
 </script>
 
 <style lang="scss">

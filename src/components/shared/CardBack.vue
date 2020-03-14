@@ -1,16 +1,22 @@
 <template>
-  <app-card-side class="side-back" :onCardClicked="onBackSideClicked">
+  <app-card-side
+    class="side-back"
+    :on-card-clicked="onBackSideClicked">
     <div slot="card-content">
       <div class="card-content-container">
         <div class="back-title flex-center">
-          <h3 class="text-center">{{ title }}</h3>
+          <h3 class="text-center">
+            {{ title }}
+          </h3>
         </div>
         <div class="back-content container">
-          <slot name="content"></slot>
+          <slot name="content" />
         </div>
       </div>
       <div class="card-btn-container">
-        <button class="btn btn-outline-green" @click="onBackSideClicked()">
+        <button
+          class="btn btn-outline-green"
+          @click="onBackSideClicked()">
           Back
         </button>
       </div>
@@ -19,24 +25,24 @@
 </template>
 
 <script>
-  import CardSide from "./CardSide.vue";
+import CardSide from './CardSide.vue'
 
-  export default {
-    props: {
-      title: {
-        type: String,
-        required: true
-      },
-      onBackSideClicked: {
-        type: Function,
-        required: true
-      }
+export default {
+  props: {
+    title: {
+      type: String,
+      required: true
     },
-
-    components: {
-      appCardSide: CardSide
+    onBackSideClicked: {
+      type: Function,
+      required: true
     }
-  };
+  },
+
+  components: {
+    appCardSide: CardSide
+  }
+}
 </script>
 
 <style lang="scss">

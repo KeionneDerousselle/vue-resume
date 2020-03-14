@@ -1,19 +1,21 @@
 <template>
   <div class="skill-bar">
-    <div class="skill-bar fill" :data-aos="`fill-bar-${percent - 5}`" data-aos-duration="2000">
-    </div>
+    <div
+      class="skill-bar fill"
+      :data-aos="`fill-bar-${percent - 5}`"
+      data-aos-duration="2000" />
   </div>
 </template>
 
 <script>
-  export default {
-    props: {
-      percent: {
-        type: Number,
-        required: true
-      }
+export default {
+  props: {
+    percent: {
+      type: Number,
+      required: true
     }
-  };
+  }
+}
 </script>
 
 <style lang="scss" scoped>

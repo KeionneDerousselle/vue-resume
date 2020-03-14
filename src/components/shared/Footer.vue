@@ -1,10 +1,14 @@
 <template>
   <footer>
-    <div class="back-to-top" @click="backToTop()">
+    <div
+      class="back-to-top"
+      @click="backToTop()">
       <i class="material-icons md-48">keyboard_arrow_up</i>
     </div>
     <div class="container">
-      <div class="contact-me" id="contact-me">
+      <div
+        id="contact-me"
+        class="contact-me">
         <h3>Contact Me</h3>
         <hr>
         <div class="row">
@@ -13,26 +17,59 @@
             <p>Midvale, UT 84047</p>
             <hr>
             <p>
-              <b>E:</b> knnderousselle@gmail.com</p>
+              <b>E:</b> knnderousselle@gmail.com
+            </p>
             <p>
-              <b>P:</b> +1-337-739-5608</p>
+              <b>P:</b> +1-337-739-5608
+            </p>
             <p>
-              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/keionnederousselle/">LinkedIn</a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/keionnederousselle/">LinkedIn</a>
             </p>
           </div>
           <div class="col-md">
-            <form method="POST" action="https://formspree.io/knnderousselle@gmail.com">
-              <label for="name" class="sr-only">Enter your name</label>
-              <input id="name" type="text" aria-placeholder="Your Name" placeholder="Your Name" name="name">
+            <form
+              method="POST"
+              action="https://formspree.io/knnderousselle@gmail.com">
+              <label
+                for="name"
+                class="sr-only">Enter your name</label>
+              <input
+                id="name"
+                type="text"
+                aria-placeholder="Your Name"
+                placeholder="Your Name"
+                name="name">
 
-              <label for="email-address" class="sr-only">Enter your email address</label>
-              <input id="email-address" type="text" aria-placeholder="Email Address" placeholder="Email Address" name="emailAddress">
+              <label
+                for="email-address"
+                class="sr-only">Enter your email address</label>
+              <input
+                id="email-address"
+                type="text"
+                aria-placeholder="Email Address"
+                placeholder="Email Address"
+                name="emailAddress">
 
-              <label for="message" class="sr-only">Enter a message</label>
-              <textarea id="message" cols="30" rows="6" placeholder="Message" aria-placeholder="Message" name="message"></textarea>
-              
+              <label
+                for="message"
+                class="sr-only">Enter a message</label>
+              <textarea
+                id="message"
+                cols="30"
+                rows="6"
+                placeholder="Message"
+                aria-placeholder="Message"
+                name="message" />
+
               <div class="contact-btn-container">
-                <button class="btn btn-outline-white hover-green" type="submit">Submit</button>
+                <button
+                  class="btn btn-outline-white hover-green"
+                  type="submit">
+                  Submit
+                </button>
               </div>
             </form>
           </div>
@@ -49,18 +86,18 @@
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        currentYear: new Date(Date.now()).getFullYear()
-      };
-    },
-    methods: {
-      backToTop() {
-        this.$scrollTo("#home", 500);
-      }
+export default {
+  data() {
+    return {
+      currentYear: new Date(Date.now()).getFullYear()
     }
-  };
+  },
+  methods: {
+    backToTop() {
+      this.$scrollTo('#home', 500)
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -180,4 +217,3 @@
     }
   }
 </style>
-
