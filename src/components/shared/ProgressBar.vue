@@ -1,8 +1,8 @@
 <template>
-  <div class="skill-bar">
+  <div class="progress-bar">
     <div
-      class="skill-bar fill"
-      :data-aos="`fill-bar-${percent - 5}`"
+      class="progress-bar progress-bar--filled"
+      :data-aos="`progress-bar--filled-${percent - 5}`"
       data-aos-duration="2000"
       data-aos-offset="0" />
   </div>
@@ -23,7 +23,7 @@ export default {
   @import "../../styles/variables.scss";
 
   @for $i from 60 through 100 {
-    [data-aos="fill-bar-#{$i}"] {
+    [data-aos="progress-bar--filled-#{$i}"] {
       width: 0%;
       transition-property: width;
       &.aos-animate {
@@ -32,7 +32,7 @@ export default {
     }
   }
 
-  .skill-bar {
+  .progress-bar {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,19 +43,13 @@ export default {
     border-radius: 3px;
     align-items: flex-end;
 
-    .fill {
+    .progress-bar--filled {
       top: 0;
       left: 0;
       position: absolute;
       background-color: $green-darker;
       padding: 0;
       opacity: 1;
-    }
-
-    span {
-      z-index: 1;
-      padding: 0 1.5rem 0 0;
-      display: initial;
     }
   }
 </style>

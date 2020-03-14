@@ -1,14 +1,14 @@
 <template>
   <app-section
     section-title="Skills"
-    class="skills-section">
+    class="section__skills">
     <div class="row">
       <div
         v-for="(skillSet, index) in skillSets"
         :key="`${skillSet}${index}`"
-        class="col-md">
-        <div class="skillbar__title-container text-center margin-bottom-2">
-          <h3 class="skillbar__title">
+        class="col-md skillset">
+        <div class="skillset__title-container text-center margin-bottom-2">
+          <h3 class="skillset__title">
             {{ skillSet.skillSetTitle }}
           </h3>
           <hr>
@@ -141,20 +141,20 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   @import "../../styles/variables.scss";
 
-  .skillbar__title-container {
+  .skillset__title-container {
     margin: 6rem 0;
   }
 
   @media (min-width: 768px) {
-    .skillbar__title-container {
+    .skillset__title-container {
       margin: 2rem 0 4rem 0;
     }
   }
 
-  .skillbar__title {
+  .skillset__title {
     text-transform: uppercase;
     letter-spacing: .2rem;
     font-size: 1.8rem;
