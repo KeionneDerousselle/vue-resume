@@ -39,16 +39,20 @@ export default {
           skillSetTitle: 'Core Competencies',
           skills: [
             {
-              name: 'ReactJs',
-              level: 95
+              name: 'Vue / Vuex',
+              level: 99
+            },
+            {
+              name: 'React / Redux',
+              level: 85
             },
             {
               name: 'ES6',
               level: 92
             },
             {
-              name: 'Redux',
-              level: 95
+              name: 'Sass',
+              level: 80
             },
             {
               name: 'Webpack',
@@ -59,15 +63,7 @@ export default {
               level: 90
             },
             {
-              name: 'REST',
-              level: 95
-            },
-            {
-              name: 'HTML',
-              level: 93
-            },
-            {
-              name: 'CSS',
+              name: 'Node',
               level: 85
             }
           ]
@@ -84,20 +80,20 @@ export default {
               level: 97
             },
             {
+              name: 'Accessibility',
+              level: 85
+            },
+            {
               name: 'SOLID Principles',
               level: 95
             },
             {
-              name: 'Continuous Integration and Delivery',
+              name: 'CI/CD',
               level: 93
             },
             {
-              name: 'AGILE Development',
-              level: 100
-            },
-            {
-              name: 'Object-Oriented Programming',
-              level: 95
+              name: 'Mobile First',
+              level: 85
             },
             {
               name: 'Pair Programming',
@@ -118,27 +114,23 @@ export default {
             },
             {
               name: 'JIRA',
-              level: 80
+              level: 95
             },
             {
-              name: 'TeamCity',
+              name: 'Jenkins',
               level: 90
             },
             {
-              name: 'Octopus',
+              name: 'LogRocket',
               level: 85
             },
             {
-              name: 'Visual Studio',
+              name: 'Browerstack',
               level: 85
             },
             {
-              name: 'ReSharper',
-              level: 80
-            },
-            {
-              name: 'Sumo Logic',
-              level: 75
+              name: 'Postman',
+              level: 90
             }
           ]
         }

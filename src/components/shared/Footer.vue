@@ -13,14 +13,11 @@
         <hr>
         <div class="row">
           <div class="col-md">
-            <p>7650 South Euro Drive</p>
-            <p>Midvale, UT 84047</p>
-            <hr>
             <p>
-              <b>E:</b> knnderousselle@gmail.com
+              <b>E:</b> <a href="mailto:knnderousselle@gmail.com">knnderousselle@gmail.com</a>
             </p>
             <p>
-              <b>P:</b> +1-337-739-5608
+              <b>P:</b> <a href="tel:+1-337-739-5608">+1-337-739-5608</a>
             </p>
             <p>
               <a
