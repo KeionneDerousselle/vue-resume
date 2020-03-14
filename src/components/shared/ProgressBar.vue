@@ -3,7 +3,8 @@
     <div
       class="skill-bar fill"
       :data-aos="`fill-bar-${percent - 5}`"
-      data-aos-duration="2000" />
+      data-aos-duration="2000"
+      data-aos-offset="0" />
   </div>
 </template>
 
