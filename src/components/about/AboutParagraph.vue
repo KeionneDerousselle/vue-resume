@@ -24,9 +24,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-  @import "../../styles/variables.scss";
-
+<style lang="scss">
   .about-paragraph {
     p {
       margin-bottom: 6rem;

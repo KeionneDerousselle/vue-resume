@@ -97,9 +97,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-  @import "../../styles/variables.scss";
-
+<style lang="scss">
   footer {
     background-color: $black-light;
     color: $white;

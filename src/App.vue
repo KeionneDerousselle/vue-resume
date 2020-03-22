@@ -81,38 +81,3 @@ export default {
   })
 }
 </script>
-
-<style lang="scss">
-  @import "./styles/variables.scss";
-  // TODO: create base styles file and import it
-  html {
-    font-size: 62.5%;
-    /* 62.5% of the font size size set by the user or browser*/
-  }
-
-  html,
-  body,
-  #app {
-    height: 100vh;
-    margin: 0;
-  }
-
-  body {
-    position: relative;
-    overflow-x: hidden;
-    // TODO: move to typography folder
-    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: $default-font-size;
-    line-height: 1.7;
-    color: $black-light;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  .content {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    width: 100%;
-  }
-</style>

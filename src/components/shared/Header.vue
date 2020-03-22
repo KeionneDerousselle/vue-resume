@@ -20,8 +20,6 @@
 </template>
 
 <style lang="scss">
-  @import "../../styles/variables.scss";
-
   .header__parallax .header__parallax-img {
     width: 100%;
     display: inline-block;

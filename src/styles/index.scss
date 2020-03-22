@@ -1,23 +1,25 @@
-$white: #fff;
+@import 'variables';
+@import 'config';
+@import 'reset';
 
-$green: #ACB9B3;
-$green-darker: #7d9389;
-$green-darkest: darken($green-darker, 15%);
+body {
+  position: relative;
+  overflow-x: hidden;
+  // TODO: move to typography folder
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: $default-font-size;
+  line-height: 1.7;
+  color: $black-light;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-$tan-green: #878359;
-$tan: #b0a68d;
-
-$gray: #ccc;
-$gray-darker: darken($gray, 50%);
-$form-gray: #4d4d4d;
-$copyright-gray: #8f9aa7;
-
-$black-light: #1b1b18;
-$black: #000;
-
-$space: 2rem;
-
-$default-font-size: 1.6rem;
+.content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
 
 .ie-container{
   width: inherit;

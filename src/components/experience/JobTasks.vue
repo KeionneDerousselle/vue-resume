@@ -21,8 +21,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import "../../styles/variables.scss";
-
   ul {
     padding: 0;
     margin: 0;

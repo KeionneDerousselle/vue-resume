@@ -51,9 +51,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-  @import "../../styles/variables.scss";
-
+<style lang="scss">
   .education-icon {
     color: $green-darker;
   }

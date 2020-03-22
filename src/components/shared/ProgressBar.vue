@@ -19,9 +19,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-  @import "../../styles/variables.scss";
-
+<style lang="scss">
   @for $i from 60 through 100 {
     [data-aos="progress-bar--filled-#{$i}"] {
       width: 0%;

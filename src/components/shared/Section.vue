@@ -37,8 +37,6 @@ export default {
 </script>
 
 <style lang="scss">
-  @import "../../styles/variables.scss";
-
   .section {
     padding: 15rem 0;
   }

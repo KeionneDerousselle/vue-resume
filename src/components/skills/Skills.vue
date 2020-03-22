@@ -142,8 +142,6 @@ export default {
 </script>
 
 <style lang="scss">
-  @import "../../styles/variables.scss";
-
   .skillset__title-container {
     margin: 6rem 0;
   }

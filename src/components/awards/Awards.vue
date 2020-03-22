@@ -36,9 +36,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-  @import "../../styles/variables.scss";
-
+<style lang="scss">
   .award {
     display: block;
     margin-bottom: 1.6rem;

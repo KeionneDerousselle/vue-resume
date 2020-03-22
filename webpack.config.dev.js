@@ -93,7 +93,8 @@ module.exports = merge(common, {
           {
             loader: 'sass-loader',
             options: {
-              sourceMap: true
+              sourceMap: true,
+              prependData: '@import \'./src/styles/index.scss\';'
             }
           }
         ],
@@ -132,7 +133,8 @@ module.exports = merge(common, {
               {
                 loader: 'sass-loader',
                 options: {
-                  sourceMap: true
+                  sourceMap: true,
+                  prependData: '@import \'./src/styles/index.scss\';'
                 }
               }
             ],

@@ -1,0 +1,18 @@
+  html {
+    font-size: 62.5%;
+    /* 62.5% of the font size size set by the user or browser*/
+  }
+
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html,
+  body,
+  #app {
+    height: 100vh;
+  }

@@ -63,9 +63,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-  @import "../../styles/variables.scss";
-
+<style lang="scss">
   .picture-section {
     height: 100%;
     padding-bottom: 10rem;
