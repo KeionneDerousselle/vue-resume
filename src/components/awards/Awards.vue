@@ -1,7 +1,5 @@
 <template>
-  <app-section
-    section-title="Awards"
-    class="awards">
+  <app-section class="awards">
     <div class="section-container">
       <p
         v-for="(award, index) in awards"

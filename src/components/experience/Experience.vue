@@ -1,5 +1,5 @@
 <template>
-  <app-section section-title="Experience">
+  <app-section>
     <card
       v-for="job in jobs"
       :key="`${job.companyName}-${job.jobTitle}-${job.timeFrame}`"

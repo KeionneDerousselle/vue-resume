@@ -7,7 +7,7 @@
         :nav-links="navLinks" />
       <app-about
         id="about"
-        class="background--dark" />
+        class="background--green" />
       <app-skills
         id="skills"
         class="background--light" />
@@ -81,3 +81,21 @@ export default {
   })
 }
 </script>
+<style lang="scss">
+.background--light {
+  background: $white;
+}
+
+.background--dark {
+  background: #f5f5f5;
+}
+
+.background--green {
+  background: $green-darker;
+
+  .section__header {
+    color: $white;
+    border-bottom: 1px solid $white;
+  }
+}
+</style>

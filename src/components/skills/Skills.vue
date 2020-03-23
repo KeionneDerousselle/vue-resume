@@ -1,7 +1,5 @@
 <template>
-  <app-section
-    section-title="Skills"
-    class="section__skills">
+  <app-section class="section__skills">
     <div class="row">
       <div
         v-for="(skillSet, index) in skillSets"
@@ -158,5 +156,6 @@ export default {
     font-size: 1.8rem;
     font-weight: 700;
     height: 3.2rem;
+    color: $green-darkest;
   }
 </style>

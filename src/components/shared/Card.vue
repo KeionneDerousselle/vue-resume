@@ -32,7 +32,7 @@ export default {}
     -moz-box-shawdow: 0 0.5rem 1rem rgba(#000, 0.2);
     box-shadow: 0 0.5rem 1rem rgba(#000, 0.2);
     border-radius: 0.3rem;
-    background-color: #fff;
+    background-color: $white;
 
     &__header {
       margin-bottom: 0;
@@ -43,7 +43,7 @@ export default {}
 
     &__title {
       display: block;
-      color: $green-darker;
+      color: $green-darkest;
       text-transform: uppercase;
       text-align: center;
       letter-spacing: 0.2rem;
@@ -54,7 +54,7 @@ export default {}
     &__subtitle {
       display: block;
       text-align: center;
-      color: #888;
+      color: #5b5b5b;
       text-transform: uppercase;
       font-size: 1.4rem;
     }

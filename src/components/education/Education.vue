@@ -1,6 +1,6 @@
 <template>
-  <app-section section-title="Education">
-    <div class="section-container overflow-hidden">
+  <app-section>
+    <div class="overflow-hidden">
       <div class="w-100">
         <div
           class="education-icon text-center"
@@ -9,10 +9,7 @@
           <i class="material-icons md-48">school</i>
         </div>
       </div>
-      <div
-        class="w-100 education-section"
-        data-aos="slide-left"
-        data-aos-duration="1500">
+      <div class="w-100 education-section">
         <h3>
           <div class="education-title">
             <span>Neumont University</span>
@@ -23,10 +20,7 @@
         <p>Bachelor of Science in Computer Science</p>
         <p>Graduated Cum Laude with a GPA of 3.54 out of a possible 4.0</p>
       </div>
-      <div
-        class="w-100"
-        data-aos="slide-right"
-        data-aos-duration="1500">
+      <div class="w-100">
         <h3>
           <div class="education-title">
             <span>Louisiana School for Math, Science, and the Arts</span>
@@ -66,7 +60,7 @@ export default {
     font-size: 1.8rem;
     font-weight: 700;
     height: 3.2rem;
-    color: $green-darker;
+    color: $green-darkest;
     margin-bottom: 1rem;
     display: flex;
     justify-content: space-between;
