@@ -5,12 +5,10 @@
         v-for="(skillSet, index) in skillSets"
         :key="`${skillSet}${index}`"
         class="col-md skillset">
-        <div class="skillset__title-container text-center margin-bottom-2">
-          <h3 class="skillset__title">
-            {{ skillSet.skillSetTitle }}
-          </h3>
-          <hr>
-        </div>
+        <h3 class="skillset__title">
+          {{ skillSet.skillSetTitle }}
+        </h3>
+
         <div
           v-for="(skill, i) in skillSet.skills"
           :key="`${skill}${i}`">
@@ -140,22 +138,26 @@ export default {
 </script>
 
 <style lang="scss">
-  .skillset__title-container {
-    margin: 6rem 0;
-  }
+.skillset:not(:last-of-type) {
+  margin-bottom: 6rem;
+}
 
-  @media (min-width: 768px) {
-    .skillset__title-container {
-      margin: 2rem 0 4rem 0;
-    }
+@include tablet {
+  .skillset {
+    margin-bottom: 0;
   }
+}
 
-  .skillset__title {
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-    font-size: 1.8rem;
-    font-weight: 700;
-    height: 3.2rem;
-    color: $green-darkest;
-  }
+.skillset__title {
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: $green-darkest;
+  border-bottom: 1px solid #ccc;
+  height: 5.3rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
 </style>

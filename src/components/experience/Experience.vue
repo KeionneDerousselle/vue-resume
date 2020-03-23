@@ -3,6 +3,8 @@
     <card
       v-for="job in jobs"
       :key="`${job.companyName}-${job.jobTitle}-${job.timeFrame}`"
+      data-aos="fade-down"
+      data-aos-duration="650"
       class="job-card">
       <template v-slot:title>
         <span class="job-card__company">{{ job.companyName }}</span>

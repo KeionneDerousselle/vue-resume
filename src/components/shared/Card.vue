@@ -47,8 +47,9 @@ export default {}
       text-transform: uppercase;
       text-align: center;
       letter-spacing: 0.2rem;
-      font-size: 1.7rem;
+      font-size: 1.8rem;
       margin-bottom: 1.5rem;
+      font-weight: 700;
     }
 
     &__subtitle {

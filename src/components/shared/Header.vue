@@ -9,7 +9,7 @@
           <h1 class="header__text">
             <div class="container">
               <span class="header__text--main">Keionne Derousselle</span>
-              <span class="header__text--sub">Software Developer</span>
+              <span class="header__text--sub">Software Engineer</span>
             </div>
           </h1>
         </div>
