@@ -19,8 +19,10 @@
         <ul>
           <li
             v-for="(task, index) in job.jobTasks"
-            :key="`${job.companyName}-task-${index}`">
-            {{ task }}
+            :key="`${job.companyName}-task-${index}`"
+            class="job-card__task">
+            <i class="material-icons job-card__task-bullet">brightness_1</i>
+            <span>{{ task }}</span>
           </li>
         </ul>
       </template>
@@ -46,8 +48,8 @@ export default {
             'Improved testing quality and standards in existing applications',
             'Mentored Junior developers and introduced a training repository',
             'Embedded a Vue/Node.js application in a legacy Saleforce application',
-            'Won monthly and quaterly Core Values Awards via peer nominations',
-            'Won monthly and quarterly Excellence Awards via mangement nominations'
+            'Received monthly and quaterly Core Values Awards via peer nominations',
+            'Received monthly and quarterly Excellence Awards via mangement nominations'
           ]
         },
         {
@@ -103,6 +105,18 @@ export default {
 
 .job-card__timeframe {
   display: block;
+}
+
+.job-card__task {
+  display: flex;
+  align-items: flex-start;
+}
+
+.job-card__task-bullet {
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-right: 1.5rem;
+  color: $green-darkest;
 }
 
 @include tablet {
