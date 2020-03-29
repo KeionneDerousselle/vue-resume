@@ -6,7 +6,8 @@
         :key="award"
         class="award"
         data-aos="fade"
-        data-aos-duration="650">
+        data-aos-duration="650"
+        data-aos-offset="0">
         {{ award }}
       </p>
     </div>

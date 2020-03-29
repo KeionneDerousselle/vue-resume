@@ -138,7 +138,7 @@ export default {
         text-decoration: none;
         color: $white;
         &:hover {
-          color: $green-darker;
+          color: $green;
         }
       }
 

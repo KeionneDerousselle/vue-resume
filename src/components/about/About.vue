@@ -4,7 +4,8 @@
       <div class="overflow-hidden about__section about__section--img">
         <div
           data-aos="fade-right"
-          data-aos-duration="800">
+          data-aos-duration="800"
+          data-aos-offset="0">
           <div class="about__img">
             <div class="my-picture">
               <img
@@ -18,7 +19,8 @@
       <div class="overflow-hidden about__section about__section--text">
         <div
           data-aos="fade-left"
-          data-aos-duration="800">
+          data-aos-duration="800"
+          data-aos-offset="0">
           <div>
             <h3 class="about__title">
               Hi there!

@@ -5,7 +5,8 @@
         <div
           class="education-icon text-center"
           data-aos="zoom-in"
-          data-aos-duration="650">
+          data-aos-duration="650"
+          data-aos-offset="0">
           <i class="material-icons md-48">school</i>
         </div>
       </div>
