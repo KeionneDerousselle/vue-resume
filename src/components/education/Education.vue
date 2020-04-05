@@ -51,16 +51,8 @@ export default {
   }
 
   .education-title {
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: $green-darkest;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #ccc;
   }
 </style>

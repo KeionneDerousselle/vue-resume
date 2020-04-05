@@ -5,9 +5,9 @@
         v-for="(skillSet, index) in skillSets"
         :key="`${skillSet}${index}`"
         class="col-md skillset">
-        <h3 class="skillset__title">
+        <h2 class="skillset__title">
           {{ skillSet.skillSetTitle }}
-        </h3>
+        </h2>
 
         <div
           v-for="(skill, i) in skillSet.skills"
@@ -146,18 +146,5 @@ export default {
   .skillset {
     margin-bottom: 0;
   }
-}
-
-.skillset__title {
-  text-transform: uppercase;
-  letter-spacing: .2rem;
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: $green-darkest;
-  border-bottom: 1px solid #ccc;
-  height: 5.3rem;
-  margin-bottom: 2rem;
-  padding-bottom: 2rem;
-  text-align: center;
 }
 </style>

@@ -9,8 +9,9 @@
       <div
         id="contact-me"
         class="contact-me">
-        <h3>Contact Me</h3>
-        <hr>
+        <h3 class="contact-me__title">
+          Contact Me
+        </h3>
         <div class="row">
           <div class="col-md">
             <p>
@@ -46,8 +47,8 @@
               <input
                 id="email-address"
                 type="text"
-                aria-placeholder="Email Address"
-                placeholder="Email Address"
+                aria-placeholder="Your Email Address"
+                placeholder="Your Email Address"
                 name="emailAddress">
 
               <label
@@ -57,13 +58,13 @@
                 id="message"
                 cols="30"
                 rows="6"
-                placeholder="Message"
-                aria-placeholder="Message"
+                placeholder="Your Message"
+                aria-placeholder="Your Message"
                 name="message" />
 
               <div class="contact-btn-container">
                 <button
-                  class="btn btn-outline-white hover-green"
+                  class="btn btn-outline-white hover-tan"
                   type="submit">
                   Submit
                 </button>
@@ -111,7 +112,7 @@ export default {
       height: 50px;
       width: 50px;
       cursor: pointer;
-      background-color: $green-darker;
+      background-color: $tan;
       display: inline-block;
       transform: translate(0, 0);
       transition: background 0.5s;
@@ -119,15 +120,15 @@ export default {
       right: 0;
 
       &:hover {
-        background-color: $green-darkest;
+        background-color: $tan-green;
       }
     }
 
     .contact-me {
       padding: 2rem 0px;
 
-      h3 {
-        text-transform: uppercase;
+      .contact-me__title {
+        color: $white;
       }
 
       hr {
@@ -173,7 +174,7 @@ export default {
         }
 
         &:focus {
-          outline: 3px solid $form-gray;
+          outline: 6px solid $tan;
         }
       }
 
@@ -200,15 +201,12 @@ export default {
       text-align: center;
       text-transform: uppercase;
       letter-spacing: 2px;
-      color: $copyright-gray;
+      color: $white;
       background-color: $black;
       height: 4rem;
       display: flex;
       align-items: center;
-      font-size: 14px;
-      .year {
-        color: $green;
-      }
+      font-size: 1.4rem;
     }
   }
 </style>

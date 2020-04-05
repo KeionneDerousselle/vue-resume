@@ -45,7 +45,8 @@ export default {
 
 <style lang="scss">
   .navbar {
-    background-color: $black;
+    background-color: $black-light;
+    border-bottom: 3px solid $tan;
 
     &.sticky-top {
       top: -0.1rem;

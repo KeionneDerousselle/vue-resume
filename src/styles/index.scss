@@ -88,33 +88,41 @@ ul {
 
   &:hover {
     background-color: $white;
-    color: $green-darker;
+    color: $green-darkest;
     opacity: 0.9;
   }
 }
 
 .btn-outline-green {
-  border: 2px solid $green-darker;
-  color: $green-darker;
+  border: 2px solid $green-darkest;
+  color: $green-darkest;
 
   &:hover {
-    background-color: $green-darker;
+    background-color: $green-darkest;
     color: $white;
     opacity: 0.9;
+  }
+}
+
+.hover-tan {
+  &:hover {
+    background-color: $tan;
+    color: #000;
+    border: none;
   }
 }
 
 .hover-white {
   &:hover {
     background-color: $white;
-    color: $green-darker;
+    color: $green-darkest;
     opacity: 0.9;
   }
 }
 
 .hover-green {
   &:hover {
-    background-color: $green-darker;
+    background-color: $green-darkest;
     color: $white;
     opacity: 0.9;
   }
@@ -134,4 +142,28 @@ ul {
 
 .material-icons.md-48 {
   font-size: 4.8rem;
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: $green-darkest;
+  border-bottom: 1px solid $gray;
+  height: 5.3rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: $green-darkest;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1.5rem;
 }

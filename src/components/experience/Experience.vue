@@ -1,27 +1,30 @@
 <template>
-  <app-section>
+  <app-section class="experience">
+    <h2 class="experience__title">
+      Experience
+    </h2>
     <card
       v-for="job in jobs"
       :key="`${job.companyName}-${job.jobTitle}-${job.timeFrame}`"
       data-aos="fade-down"
       data-aos-duration="650"
-      class="job-card">
+      class="job">
       <template v-slot:title>
-        <span class="job-card__company">{{ job.companyName }}</span>
+        <span class="job__company">{{ job.companyName }}</span>
       </template>
       <template v-slot:subtitle>
         <div>
-          <span class="job-card__position">{{ job.jobTitle }}</span>
-          <span class="job-card__timeframe">{{ job.timeFrame }}</span>
+          <span class="job__header__subtitle job__position">{{ job.jobTitle }}, </span>
+          <span class="job__header__subtitle job__timeframe">{{ job.timeFrame }}</span>
         </div>
       </template>
       <template v-slot:content>
-        <ul>
+        <ul class="job__tasks">
           <li
             v-for="(task, index) in job.jobTasks"
             :key="`${job.companyName}-task-${index}`"
-            class="job-card__task">
-            <i class="material-icons job-card__task-bullet">brightness_1</i>
+            class="job__task">
+            <i class="material-icons job__task-bullet">brightness_1</i>
             <span>{{ task }}</span>
           </li>
         </ul>
@@ -93,26 +96,49 @@ export default {
 }
 </script>
 <style lang="scss">
-.job-card:not(:last-child) {
-  margin-bottom: 3.5rem;
+.job:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 4rem;
+  margin-bottom: 4rem;
 }
 
-.job-card__position {
+.job__header {
+  margin-bottom: 0;
+  margin-bottom: 1.5rem;
+}
+
+.job__company {
   display: block;
+  color: $green-darkest;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 1.8rem;
   margin-bottom: 0.5rem;
-  margin-right: 0;
+  font-weight: 700;
 }
 
-.job-card__timeframe {
+.job__header__subtitle {
   display: block;
+  color: #5b5b5b;
+  text-transform: uppercase;
+  font-size: 1.4rem;
 }
 
-.job-card__task {
+.job__position {
+  margin-right: 0.5rem;
+}
+
+.job__tasks {
+  margin: 0;
+  padding: 0;
+}
+
+.job__task {
   display: flex;
   align-items: flex-start;
 }
 
-.job-card__task-bullet {
+.job__task-bullet {
   font-size: 1rem;
   margin-top: 1rem;
   margin-right: 1.5rem;
@@ -120,14 +146,13 @@ export default {
 }
 
 @include tablet {
-  .job-card__position {
+  .job__header__subtitle{
     display: inline-block;
-    margin-right: 0.5rem;
-    margin-bottom: 0;
   }
 
-  .job-card__timeframe {
-    display: inline-block;
+  .job-card__position {
+    margin-right: 0.5rem;
+    margin-bottom: 0;
   }
 }
 </style>

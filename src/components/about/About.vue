@@ -68,10 +68,16 @@ export default {
 
 .about__title {
   font-size: 4rem;
+  color: $white;
+  text-transform: none;
+  border: none;
+  text-align: left;
 }
 
 .about__paragraph {
   font-size: 2rem;
+  padding: 0;
+  margin: 0;
 }
 
 .about__img {

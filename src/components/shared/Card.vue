@@ -34,13 +34,6 @@ export default {}
     border-radius: 0.3rem;
     background-color: $white;
 
-    &__header {
-      margin-bottom: 0;
-      padding-bottom: 1.5rem;
-      border-bottom: 1px solid #ccc;
-      margin-bottom: 1.5rem;
-    }
-
     &__title {
       display: block;
       color: $green-darkest;
