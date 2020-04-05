@@ -46,7 +46,7 @@
                 class="sr-only">Enter your email address</label>
               <input
                 id="email-address"
-                type="text"
+                type="email"
                 aria-placeholder="Your Email Address"
                 placeholder="Your Email Address"
                 name="emailAddress">
@@ -151,14 +151,16 @@ export default {
         border-radius: 3px;
         width: 100%;
         border: none;
-        margin-bottom: 24px;
+        margin-bottom: 2.4rem;
         background: #f5f5f5;
+        font-weight: 500;
+        padding: 1.6rem 2rem;
 
         &::placeholder {
           text-transform: uppercase;
           color: $form-gray;
           letter-spacing: 1px;
-          font-size: 14px;
+          font-size: 1.4rem;
         }
 
         &::-webkit-input-placeholder {
@@ -174,18 +176,12 @@ export default {
         }
 
         &:focus {
-          outline: 6px solid $tan;
+          outline: 4px solid $tan;
         }
       }
 
       input {
-        height: 50px;
-        padding-left: 20px;
-        font-weight: 500;
-      }
-
-      textarea {
-        padding: 16px 20px;
+        height: 5rem;
       }
 
       .contact-btn-container {
