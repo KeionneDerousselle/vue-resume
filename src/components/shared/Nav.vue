@@ -77,7 +77,7 @@ export default {
       padding-right: 0;
       padding-bottom: 0.3rem;
       margin-right: 2rem;
-      color: $white;
+      color: $gray;
       user-select: none;
       text-transform: uppercase;
       letter-spacing: 0.3rem;
@@ -98,7 +98,7 @@ export default {
       }
 
       &.active {
-        color: $tan !important;
+        color: $white !important;
       }
     }
   }
