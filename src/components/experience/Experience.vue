@@ -97,7 +97,7 @@ export default {
 </script>
 <style lang="scss">
 .job:not(:last-child) {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid $gray;
   padding-bottom: 4rem;
   margin-bottom: 4rem;
 }

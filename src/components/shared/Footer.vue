@@ -64,7 +64,7 @@
 
               <div class="contact-btn-container">
                 <button
-                  class="btn btn-outline-white hover-tan"
+                  class="btn btn-tan hover-tan-darker"
                   type="submit">
                   Submit
                 </button>
@@ -108,9 +108,9 @@ export default {
 
     .back-to-top {
       position: absolute;
-      top: -25px;
-      height: 50px;
-      width: 50px;
+      top: -2.5rem;
+      height: 5rem;
+      width: 5rem;
       cursor: pointer;
       background-color: $tan;
       display: inline-block;
@@ -118,9 +118,10 @@ export default {
       transition: background 0.5s;
       border-radius: 50%;
       right: 0;
+      color: $black-light;
 
       &:hover {
-        background-color: $tan-green;
+        background-color: $tan-darker;
       }
     }
 
@@ -139,7 +140,7 @@ export default {
         text-decoration: none;
         color: $white;
         &:hover {
-          color: $green;
+          color: $tan;
         }
       }
 
@@ -176,7 +177,7 @@ export default {
         }
 
         &:focus {
-          outline: 4px solid $tan;
+          outline: 4px solid $tan-darker;
         }
       }
 

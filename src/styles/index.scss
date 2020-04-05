@@ -82,6 +82,11 @@ ul {
   transition: all 0.3s ease;
 }
 
+.btn-tan {
+  background-color: $tan;
+  color: $black-light;
+}
+
 .btn-outline-white {
   border: 2px solid $white;
   color: $white;
@@ -104,10 +109,9 @@ ul {
   }
 }
 
-.hover-tan {
+.hover-tan-darker {
   &:hover {
-    background-color: $tan;
-    color: #000;
+    background-color: $tan-darker;
     border: none;
   }
 }
@@ -164,6 +168,6 @@ h3 {
   font-weight: 700;
   color: $green-darkest;
   padding-bottom: 1.5rem;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid $gray;
   margin-bottom: 1.5rem;
 }
