@@ -8,6 +8,9 @@
       <app-about
         id="about"
         class="background--green" />
+      <testimonies
+        id="testimonies"
+        class="background--dark" />
       <app-skills
         id="skills"
         class="background--light" />
@@ -29,6 +32,7 @@
 import Header from './components/shared/Header.vue'
 import Nav from './components/shared/Nav.vue'
 import About from './components/about/About.vue'
+import Testimonies from './components/testimonies/Testimonies.vue'
 import Skills from './components/skills/Skills.vue'
 import Experience from './components/experience/Experience.vue'
 import Education from './components/education/Education.vue'
@@ -40,6 +44,7 @@ export default {
     appHeader: Header,
     appNav: Nav,
     appAbout: About,
+    Testimonies,
     appSkills: Skills,
     appExperience: Experience,
     appEducation: Education,
@@ -56,6 +61,10 @@ export default {
       {
         title: 'About Me',
         href: '#about'
+      },
+      {
+        title: 'Testimonies',
+        href: '#testimonies'
       },
       {
         title: 'Skills',
