@@ -8,7 +8,7 @@ export default [
     }
   },
   {
-    quote: 'Keionne has been a great mentor and is always be building the path forward for a new standard of doing things. Recently, she built out a new component library to help us maintain a high quality reusable components. I was so impressed to see how much work she had already put into it. She even wrote up documentation to help those who are contributing. I feel super lucky to have the privilege of being on the same team as Keionne and getting to work with her every day.',
+    quote: 'Keionne has been a great mentor and is always building the path forward for a new standard of doing things. Recently, she built out a new component library to help us maintain high quality reusable components. I was so impressed to see how much work she had already put into it. She even wrote up documentation to help those who are contributing. I feel super lucky to have the privilege of being on the same team as Keionne and getting to work with her every day.',
     author: {
       name: 'Cody Anderson',
       company: 'CHG',
@@ -29,6 +29,14 @@ export default [
       name: 'Josh Cummings',
       company: 'Neumont University',
       position: 'University Professor'
+    }
+  },
+  {
+    quote: 'Keionne excels at understanding the problem we are trying to solve and applying an artfully architected solution to that problem. She diligently pursues knowledge as she hones her craft -- making sure she is up-to-date on technologies that we apply to create products to impact the business and delight our users.',
+    author: {
+      name: 'Jake Simons',
+      company: 'CHG',
+      position: 'Product Manager'
     }
   }
 ]
