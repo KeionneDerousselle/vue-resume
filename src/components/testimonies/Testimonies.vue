@@ -48,34 +48,10 @@ export default {
 }
 </script>
 <style lang="scss">
-// .testimonies {
-//   height: 100vh;
-
-//   .container {
-//     height: 100vh;
-
-//     .testimonies-carousel {
-//       height: 100vh;
-//     }
-//   }
-// }
-
-@include tablet {
-  .testimonies {
-    height: 76.5rem;
-
-    .container {
-      height: 100%;
-
-      .testimonies-carousel {
-        height: 100%;
-      }
-    }
-  }
-}
-
 .testimony__content {
   text-align: center;
+  font-size: 1.6rem;
+  height: 57rem;
 }
 
 .testimonial__quote-text {
@@ -98,12 +74,38 @@ export default {
 }
 
 .testimony__quote {
+  font-size: 4rem;
   color: $green-darker;
   display: block;
 }
 
 .testimony__quote--left {
   transform: rotateY(180deg);
+}
+
+@include mobile-md {
+  .testimony__content {
+    height: 49rem;
+  }
+}
+
+@include mobile-lg {
+  .testimony__content {
+    height: 45rem;
+  }
+}
+
+@include tablet {
+  .testimony__content {
+    font-size: 2rem;
+    height: 45rem;
+  }
+}
+
+@include laptop {
+  .testimony__content {
+    height: 40rem;
+  }
 }
 
 </style>

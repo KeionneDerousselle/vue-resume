@@ -7,7 +7,8 @@
       <div
         v-for="(item, index) in items"
         :key="index"
-        :class="['carousel-item', { active: index === active }]">
+        :class="['carousel-item', { active: index === active }]"
+        :data-interval="slideInterval">
         <slot
           :name="`crsl-item-${index}`"
           :item="item" />
@@ -39,6 +40,11 @@ export default {
     active: {
       type: Number,
       default: 0
+    },
+
+    slideInterval: {
+      type: Number,
+      default: 6000
     }
   },
 
@@ -56,9 +62,17 @@ export default {
 }
 
 .carousel__items {
-  width: 60%;
+  width: 100%;
   display: flex;
   align-items: center;
+}
+
+@include tablet {
+  .carousel__items {
+    width: 85%;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .carousel-control-prev,

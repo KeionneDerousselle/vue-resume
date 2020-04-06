@@ -24,7 +24,7 @@ export default [
     }
   },
   {
-    quote: 'The thing that impressed me most about Keionne was her dignity, poise, and other-respect she maintained against high expectations and heavy demands. When under the stress of homework and classes, she always remained happy, confident, and engaged. Keionne perseveres, continuing to submit code of excellent quality and maintains her focus on learning. Keionne can be relied on to have done her research when she asks questions or offers opinions on what route a software product should be taken. It would be a pleasure to work with Keionne down the road in the industry. She will be a valuable asset to any company she works for.',
+    quote: 'The thing that impressed me most about Keionne was her dignity, poise, and other-respect she maintained against high expectations and heavy demands. When under the stress of homework and classes, she always remained happy, confident, and engaged. Keionne perseveres, continuing to submit code of excellent quality and maintains her focus on learning. It would be a pleasure to work with Keionne down the road in the industry. She will be a valuable asset to any company she works for.',
     author: {
       name: 'Josh Cummings',
       company: 'Neumont University',
