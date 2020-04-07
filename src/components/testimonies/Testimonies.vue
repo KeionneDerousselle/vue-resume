@@ -22,7 +22,10 @@
           </div>
         </div>
         <div class="testimonial__author">
-          {{ testimony.author.name }}
+          <a
+            :href="testimony.author.link"
+            target="__blank"
+            class="testimonial__author-link">{{ testimony.author.name }}</a>
         </div>
         <div class="testimonial__author-info">
           {{ testimony.author.company }}, {{ testimony.author.position }}
@@ -83,6 +86,23 @@ export default {
   transform: rotateY(180deg);
 }
 
+.testimonial__author-link {
+  text-decoration: none;
+  color: $green-darkest;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.testimonial__author-link:hover {
+  text-decoration: none;
+  color: $green-darker;
+}
+
+.testimonial__author-info {
+  font-size: 1.4rem;
+  color: $black-light;
+}
+
 @include mobile-md {
   .testimony__content {
     height: 49rem;
@@ -99,6 +119,14 @@ export default {
   .testimony__content {
     font-size: 2rem;
     height: 45rem;
+  }
+
+  .testimonial__author-link {
+    font-size: 1.8rem;
+  }
+
+  .testimonial__author-info {
+    font-size: 1.6rem;
   }
 }
 

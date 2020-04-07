@@ -3,6 +3,10 @@ import VueScrollTo from 'vue-scrollto'
 import App from './App.vue'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import '@fortawesome/fontawesome-free/css/fontawesome.min.css'
+import '@fortawesome/fontawesome-free/css/regular.min.css'
+import '@fortawesome/fontawesome-free/css/solid.min.css'
+import '@fortawesome/fontawesome-free/css/brands.min.css'
 
 AOS.init()
 window.addEventListener('load', AOS.refresh)

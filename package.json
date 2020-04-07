@@ -13,6 +13,7 @@
     "build": "webpack --mode production --config webpack.config.prod.js --progress --hide-modules"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "aos": "^2.3.4",
     "vue": "^2.6.11",
     "vue-scrollto": "^2.17.1"
