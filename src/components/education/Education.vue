@@ -1,58 +1,54 @@
 <template>
-  <app-section>
-    <div class="overflow-hidden">
-      <div class="w-100">
-        <div
-          class="education-icon text-center"
-          data-aos="zoom-in"
-          data-aos-duration="650"
-          data-aos-offset="0">
-          <i class="material-icons md-48">school</i>
-        </div>
-      </div>
-      <div class="w-100 education-section">
-        <h3 class="education-title">
-          <span>Neumont University</span>
-          <span>2015</span>
-        </h3>
-        <p>Bachelor of Science in Computer Science</p>
-        <p>Graduated Cum Laude with a GPA of 3.54 out of a possible 4.0</p>
-      </div>
-      <div class="w-100">
-        <h3 class="education-title">
-          <span>Louisiana School for Math, Science, and the Arts</span>
-          <span>2012</span>
-        </h3>
-        <p>High School Diploma</p>
-        <p>Graduated with a GPA of 3.2 out of a possible 4.0</p>
-      </div>
+  <app-section class="education">
+    <h2
+      class="section__title education__title"
+      data-aos="zoom-in"
+      data-aos-duration="650"
+      data-aos-offset="0">
+      <span class="fas fa-graduation-cap section-title__icon education__icon" />
+      <span>Education</span>
+    </h2>
+
+    <div
+      v-for="institution in education"
+      :key="institution.institutionName"
+      class="institution"
+      data-aos="fade"
+      data-aos-duration="650"
+      data-aos-offset="0">
+      <h3 class="institution__title">
+        <span>{{ institution.institutionName }}</span>
+        <span>{{ institution.graduationYear }}</span>
+      </h3>
+      <p>{{ institution.accreditation }}</p>
+      <p>{{ institution.gpaDescription }}</p>
     </div>
   </app-section>
 </template>
 
 <script>
 import Section from '../shared/Section.vue'
+import education from '../../assets/data/education'
 
 export default {
   components: {
     appSection: Section
-  }
+  },
+  data: () => ({
+    education
+  })
 }
 </script>
 
 <style lang="scss">
-  .education-icon {
-    color: $green-darker;
-    margin-bottom: 6rem;
+  .institution:not(:last-of-type) {
+    margin-bottom: 5rem;
   }
 
-  .education-section {
-    margin-bottom: 6rem;
-  }
-
-  .education-title {
+  .institution__title {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
 </style>

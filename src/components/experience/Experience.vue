@@ -1,8 +1,14 @@
 <template>
   <app-section class="experience">
-    <h2 class="experience__title">
-      Experience
+    <h2
+      class="section__title experience__title"
+      data-aos="zoom-in"
+      data-aos-duration="650"
+      data-aos-offset="0">
+      <span class="fas fa-laptop-code section-title__icon experience__icon" />
+      <span>Experience</span>
     </h2>
+
     <card
       v-for="job in jobs"
       :key="`${job.companyName}-${job.jobTitle}-${job.timeFrame}`"
@@ -24,7 +30,7 @@
             v-for="(task, index) in job.jobTasks"
             :key="`${job.companyName}-task-${index}`"
             class="job__task">
-            <i class="material-icons job__task-bullet">brightness_1</i>
+            <span class="fas fa-circle job__task-bullet" />
             <span>{{ task }}</span>
           </li>
         </ul>
@@ -36,63 +42,17 @@
 <script>
 import Section from '../shared/Section.vue'
 import Card from '../shared/Card.vue'
+import jobs from '../../assets/data/experience'
 
 export default {
-  data() {
-    return {
-      jobs: [
-        {
-          companyName: 'CHG Healthcare',
-          jobTitle: 'Software Engineer II',
-          timeFrame: 'Aug 2018 - Present',
-          jobTasks: [
-            'Created a CI/CD pipeline deploying to Heroku',
-            'Worked with UX and Product to implement a design sytem by creating a mobile first, accessible component library',
-            'Improved testing quality and standards in existing applications',
-            'Mentored Junior developers and introduced a training repository',
-            'Embedded a Vue/Node.js application in a legacy Saleforce application',
-            'Received monthly and quaterly Core Values Awards via peer nominations',
-            'Received monthly and quarterly Excellence Awards via mangement nominations'
-          ]
-        },
-        {
-          companyName: 'Willis Towers Watson',
-          jobTitle: 'Software Developer',
-          timeFrame: 'Jun 2015 - Aug 2018',
-          jobTasks: [
-            'Legacy Application Rewrite',
-            'Maintain and Improve Product Stability',
-            'Automated Testing',
-            'AGILE and Iterative Development',
-            'Continous Integration and Delivery',
-            'Build Pipeline Improvements'
-          ]
-        },
-        {
-          companyName: 'Pluralsight',
-          timeFrame: 'Jan 2015 - Jun 2015',
-          jobTitle: 'Student Developer',
-          jobTasks: [
-            'Test Driven Development',
-            'Created Workflow Automation Tool',
-            'Setup CI/CD Pipeline',
-            'Designed Look and Feel With Bootstrap and CSS',
-            'LEAN Development'
-          ]
-        },
-        {
-          companyName: 'International Document Services',
-          jobTitle: 'Student Developer',
-          timeFrame: 'Sept 2014 - Dec 2014',
-          jobTasks: [ 'Applied New Style to Company Site', 'Created Dynamic Content and Widgets', 'Provided Weekly Demos' ]
-        }
-      ]
-    }
-  },
   components: {
     appSection: Section,
     Card
-  }
+  },
+
+  data: () => ({
+    jobs
+  })
 }
 </script>
 <style lang="scss">

@@ -142,6 +142,13 @@ export default {
   margin-bottom: 6rem;
 }
 
+.skillset__title {
+  border-bottom: 1px solid $gray;
+  height: 5.3rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+
 @include tablet {
   .skillset {
     margin-bottom: 0;

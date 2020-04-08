@@ -1,11 +1,11 @@
 <template>
   <app-section class="awards">
     <h2
-      class="awards__title"
+      class="section__title awards__title"
       data-aos="zoom-in"
       data-aos-duration="650"
       data-aos-offset="0">
-      <span class="fas fa-medal awards__icon" />
+      <span class="fas fa-medal section-title__icon awards__icon" />
       <span>Awards</span>
     </h2>
 
@@ -37,26 +37,7 @@ export default {
 </script>
 
 <style lang="scss">
-  .award {
-    display: block;
-    font-size: $default-font-size;
-  }
-
   .award:not(:last-of-type) {
     margin-bottom: 5rem;
-  }
-
-  .awards__title {
-    margin-bottom: 6rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-  }
-
-  .awards__icon {
-    color: $green-darker;
-    font-size: 2.64rem;
-    margin-right: 2rem;
   }
 </style>
