@@ -1,6 +1,6 @@
 export default [
   {
-    quote: 'Keionne consistently brings a high degree of quality and mentorship to the team. She excels at balancing the delivery of value and engineering maintainable solutions. She is never content to look past problematic code and always helps fix it and educate others on why it needs to be fixed. I really appreciate the work she does and the pride she puts into what she does.',
+    quote: 'Keionne consistently brings a high degree of quality and mentorship to the team. She excels at balancing the delivery of value and engineering maintainable solutions. She is never content to look past problematic code and always helps fix it and educates others on why it needs to be fixed. I really appreciate the work she does and the pride she puts into what she does.',
     author: {
       name: 'John Miller',
       link: 'https://www.linkedin.com/in/johnmiller64/',
