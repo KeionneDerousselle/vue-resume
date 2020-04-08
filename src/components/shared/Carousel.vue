@@ -106,7 +106,9 @@ export default {
 
   li {
     background-color: $green-darker;
-    height: 5px;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
     margin-left: 10px;
     margin-right: 10px;
   }

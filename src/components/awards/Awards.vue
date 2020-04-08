@@ -39,5 +39,7 @@ export default {
 <style lang="scss">
   .award:not(:last-of-type) {
     margin-bottom: 5rem;
+    padding-bottom: 5rem;
+    border-bottom: 1px solid $gray;
   }
 </style>

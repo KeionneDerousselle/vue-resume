@@ -43,6 +43,8 @@ export default {
 <style lang="scss">
   .institution:not(:last-of-type) {
     margin-bottom: 5rem;
+    padding-bottom: 5rem;
+    border-bottom: 1px solid $gray;
   }
 
   .institution__title {
