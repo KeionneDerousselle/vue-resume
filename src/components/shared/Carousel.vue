@@ -109,8 +109,16 @@ export default {
     height: 2rem;
     width: 2rem;
     border-radius: 50%;
-    margin-left: 10px;
-    margin-right: 10px;
+  }
+
+  li:not(:last-of-type) {
+    margin-right: 1.5rem;
+  }
+}
+
+@include mobile-lg {
+  .carousel-indicators li:not(:last-of-type) {
+    margin-right: 2rem;
   }
 }
 </style>

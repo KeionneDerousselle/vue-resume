@@ -9,10 +9,10 @@
       <div
         id="contact-me"
         class="contact-me">
-        <h3 class="contact-me__title">
-          Contact Me
-        </h3>
         <div class="contact-me__form-container">
+          <h3 class="contact-me__title">
+            Contact Me
+          </h3>
           <form
             method="POST"
             action="https://formspree.io/knnderousselle@gmail.com"
@@ -176,6 +176,7 @@ export default {
 
   .contact-me__form-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 3rem 0;
