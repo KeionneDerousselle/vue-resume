@@ -3,7 +3,7 @@
     <div
       class="back-to-top"
       @click="backToTop()">
-      <i class="material-icons md-48">keyboard_arrow_up</i>
+      <span class="fas fa-chevron-up footer__link-icon" />
     </div>
     <div class="container">
       <div

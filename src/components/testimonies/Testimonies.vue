@@ -12,13 +12,13 @@
         class="testimony__content">
         <div>
           <div class="testimony__quote-container testimony__quote-container--left">
-            <i class="material-icons testimony__quote testimony__quote--left">format_quote</i>
+            <span class="fas fa-quote-left testimony__quote" />
           </div>
           <p class="testimonial__quote-text">
             {{ testimony.quote }}
           </p>
           <div class="testimony__quote-container testimony__quote-container--right">
-            <i class="material-icons testimony__quote testimony__quote--right">format_quote</i>
+            <span class="fas fa-quote-right testimony__quote" />
           </div>
         </div>
         <div class="testimonial__author">
@@ -77,13 +77,9 @@ export default {
 }
 
 .testimony__quote {
-  font-size: 4rem;
+  font-size: 2rem;
   color: $green-darker;
   display: block;
-}
-
-.testimony__quote--left {
-  transform: rotateY(180deg);
 }
 
 .testimonial__author-link {
@@ -116,6 +112,10 @@ export default {
 }
 
 @include tablet {
+  .testimony__quote {
+  font-size: 3rem;
+  }
+
   .testimony__content {
     font-size: 2rem;
     height: 45rem;
