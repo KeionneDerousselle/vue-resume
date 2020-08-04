@@ -27,7 +27,7 @@
             </h3>
             <p class="about__paragraph">
               My name is Keionne Derousselle.
-              I am a hardworking full stack engineer,  who loves technology.
+              I am a hardworking full stack engineer, who loves technology.
               Eager to learn new things, I am constantly honing my craft.
               Delivering quality products is what drives me to create.
             </p>

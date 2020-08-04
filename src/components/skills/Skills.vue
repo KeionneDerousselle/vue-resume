@@ -62,7 +62,7 @@ export default {
           ]
         },
         {
-          skillSetTitle: 'Technical Skills',
+          skillSetTitle: 'Methodologies',
           skills: [
             {
               name: 'Test Driven Development',

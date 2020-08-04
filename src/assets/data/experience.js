@@ -5,12 +5,12 @@ export default [
     timeFrame: 'Aug 2018 - Present',
     jobTasks: [
       'Created a CI/CD pipeline deploying to Heroku',
-      'Worked with UX and Product to implement a design sytem by creating a mobile first, accessible component library',
+      'Worked with UX and Product to implement a design system by creating a mobile first, accessible component library',
       'Improved testing quality and standards in existing applications',
       'Mentored Junior developers and introduced a training repository',
-      'Embedded a Vue/Node.js application in a legacy Saleforce application',
-      'Received monthly and quaterly Core Values Awards via peer nominations',
-      'Received monthly and quarterly Excellence Awards via mangement nominations'
+      'Embedded a Vue/Node.js application in a legacy Salesforce application',
+      'Received monthly and quarterly Core Values Awards via peer nominations',
+      'Received monthly and quarterly Excellence Awards via management nominations'
     ]
   },
   {
@@ -22,7 +22,7 @@ export default [
       'Maintain and Improve Product Stability',
       'Automated Testing',
       'AGILE and Iterative Development',
-      'Continous Integration and Delivery',
+      'Continuous Integration and Delivery',
       'Build Pipeline Improvements'
     ]
   },
